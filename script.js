@@ -7,6 +7,47 @@ mobileMenuBtn.addEventListener('click', () => {
     mobileMenuBtn.classList.toggle('active');
 });
 
+// Dropdown Menu Functionality
+const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(dropdown => {
+    const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+    const dropdownLink = dropdown.querySelector('a');
+    
+    // Desktop hover functionality
+    dropdown.addEventListener('mouseenter', () => {
+        if (window.innerWidth > 768) {
+            dropdownMenu.style.opacity = '1';
+            dropdownMenu.style.visibility = 'visible';
+            dropdownMenu.style.transform = 'translateY(0)';
+        }
+    });
+    
+    dropdown.addEventListener('mouseleave', () => {
+        if (window.innerWidth > 768) {
+            dropdownMenu.style.opacity = '0';
+            dropdownMenu.style.visibility = 'hidden';
+            dropdownMenu.style.transform = 'translateY(-10px)';
+        }
+    });
+    
+    // Mobile click functionality
+    dropdownLink.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        }
+    });
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav') && !e.target.closest('.mobile-menu-btn')) {
+        navList.classList.remove('active');
+        mobileMenuBtn.classList.remove('active');
+    }
+});
+
 // FAQ Accordion
 const faqItems = document.querySelectorAll('.faq-item');
 
@@ -110,42 +151,24 @@ window.addEventListener('scroll', () => {
 });
 
 // Form Validation and Submission
+// WhatsApp redirect for contact form
 const contactForm = document.querySelector('.contact-form-wrapper');
-
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const name = contactForm.querySelector('input[type="text"]').value;
-        const email = contactForm.querySelector('input[type="email"]').value;
-        const message = contactForm.querySelector('textarea').value;
-        
-        // Basic validation
-        if (!name || !email || !message) {
-            alert('Please fill in all required fields.');
-            return;
-        }
-        
-        if (!isValidEmail(email)) {
-            alert('Please enter a valid email address.');
-            return;
-        }
-        
-        // Simulate form submission
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-        
-        submitBtn.textContent = 'Sending...';
-        submitBtn.disabled = true;
-        
-        setTimeout(() => {
-            alert('Thank you for your message! We will get back to you soon.');
-            contactForm.reset();
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }, 2000);
+        const name = contactForm.querySelector('input[type="text"]').value.trim();
+        const email = contactForm.querySelector('input[type="email"]').value.trim();
+        const service = contactForm.querySelector('select').value.trim();
+        const message = contactForm.querySelector('textarea').value.trim();
+
+        let whatsappMessage = `Hello, I would like to get in touch!%0A`;
+        if (name) whatsappMessage += `Name: ${encodeURIComponent(name)}%0A`;
+        if (email) whatsappMessage += `Email: ${encodeURIComponent(email)}%0A`;
+        if (service && service !== 'Select Service') whatsappMessage += `Service: ${encodeURIComponent(service)}%0A`;
+        if (message) whatsappMessage += `Message: ${encodeURIComponent(message)}%0A`;
+
+        const whatsappUrl = `https://wa.me/918789772081?text=${whatsappMessage}`;
+        window.open(whatsappUrl, '_blank');
     });
 }
 
@@ -203,7 +226,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for animation
-const animatedElements = document.querySelectorAll('.service-card, .team-card, .testimonial-card');
+const animatedElements = document.querySelectorAll('.service-card, .team-card, .testimonial-card, .why-choose-card');
 
 animatedElements.forEach(el => {
     el.style.opacity = '0';
@@ -242,6 +265,16 @@ if (whyChooseUsSection) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 animateCounters();
+                
+                // Animate FAQ cards with staggered effect
+                const faqCards = entry.target.querySelectorAll('.why-choose-card');
+                faqCards.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, index * 200);
+                });
+                
                 whyChooseUsObserver.unobserve(entry.target);
             }
         });
@@ -301,18 +334,112 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Service Card Hover Effects
+// Service Card Flip Effects
 const serviceCards = document.querySelectorAll('.service-card');
 
 serviceCards.forEach(card => {
+    const cardInner = card.querySelector('.service-card-inner');
+    let isFlipped = false;
+    
+    // Desktop hover effect
     card.addEventListener('mouseenter', () => {
-        card.style.transform = 'translateY(-10px) scale(1.02)';
+        if (window.innerWidth > 768) {
+            card.classList.add('flipped');
+        }
     });
     
     card.addEventListener('mouseleave', () => {
-        card.style.transform = 'translateY(0) scale(1)';
+        if (window.innerWidth > 768) {
+            card.classList.remove('flipped');
+        }
     });
+    
+    // Mobile/Tablet click effect
+    card.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            isFlipped = !isFlipped;
+            if (isFlipped) {
+                card.classList.add('flipped');
+            } else {
+                card.classList.remove('flipped');
+            }
+        }
+    });
+    
+    // Reset flip on window resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            isFlipped = false;
+            card.classList.remove('flipped');
+        }
+    });
+    
+    // Add touch support for mobile devices
+    let touchStartY = 0;
+    let touchEndY = 0;
+    
+    card.addEventListener('touchstart', (e) => {
+        touchStartY = e.touches[0].clientY;
+    });
+    
+    card.addEventListener('touchend', (e) => {
+        touchEndY = e.changedTouches[0].clientY;
+        const touchDiff = Math.abs(touchStartY - touchEndY);
+        
+        // Only trigger flip if it's a tap (not a scroll)
+        if (touchDiff < 10 && window.innerWidth <= 768) {
+            isFlipped = !isFlipped;
+            if (isFlipped) {
+                card.classList.add('flipped');
+            } else {
+                card.classList.remove('flipped');
+            }
+        }
+    });
+    
+    // Add keyboard support for accessibility
+    card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            if (window.innerWidth <= 768) {
+                isFlipped = !isFlipped;
+                if (isFlipped) {
+                    card.classList.add('flipped');
+                } else {
+                    card.classList.remove('flipped');
+                }
+            }
+        }
+    });
+    
+    // Make cards focusable for accessibility
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', 'Service card - click or press Enter to flip');
 });
+
+// Founder Section Animations
+const founderSection = document.querySelector('.founder');
+const specItems = document.querySelectorAll('.spec-item');
+
+if (founderSection) {
+    const founderObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Animate spec items with staggered delay
+                specItems.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add('animate');
+                    }, index * 200);
+                });
+                
+                founderObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    founderObserver.observe(founderSection);
+}
 
 // Team Card Hover Effects
 const teamCards = document.querySelectorAll('.team-card');

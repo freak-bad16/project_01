@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test - Medical Care Services</title>
+    <title>Kapsveda - Medical Care Services</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -15,15 +15,21 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <h2>Kapsveda </h2>
+                    <h2>Kapsveda</h2>
                 </div>
                 <nav class="nav">
                     <ul class="nav-list">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#contact">Contact us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#events">Events</a></li>
+                        <li class="dropdown">
+                            <a href="#about">About us </i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#services">Services</i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#contact">Contact</i></a>
+                            
+                        </li>
                     </ul>
                 </nav>
                 <button class="contact-btn">Call:+91-7355227127</button>
@@ -71,8 +77,10 @@
                     </div>
                 </div>
                 <div class="hero-images">
-                    <div class="doctor-img doctor-1"></div>
-                    <div class="doctor-img doctor-2"></div>
+                    <div class="doctor-img doctor-1"> <img
+                            src="https://i.pinimg.com/736x/af/da/df/afdadf665ba0aa7f487b93a197da8949.jpg" alt=""></div>
+                    <div class="doctor-img doctor-2"> <img
+                            src="https://i.pinimg.com/474x/c6/12/ac/c612ac447dff18c445897fb2130cc3fa.jpg" alt=""></div>
                 </div>
             </div>
         </div>
@@ -85,60 +93,91 @@
                 <div class="about-text">
                     <span class="section-badge">About Us</span>
                     <h2>Welcome To Kapsveda Wellness Clinic</h2>
-                    <p>Welcome to Kapsveda Wellness Clinic, your trusted destination for holistic healing and wellness.
-                        Located in Kalyanpur, Kanpur, our clinic is dedicated to providing integrative healthcare
+                    <p>Welcome to <span style="font-weight: bold;">Kapsveda Wellness Clinic</span>, your trusted
+                        destination for holistic healing and wellness.
+                        Located in <span style="font-weight: bold;">Kalyanpur, Kanpur</span>, our clinic is dedicated to
+                        providing integrative healthcare
                         solutions that combine modern medical science with traditional healing practices. We specialize
                         in pain management, physiotherapy, weight management, and lifestyle therapy, helping individuals
                         achieve their optimal health and well-being.
 
-                        At Kapsveda Wellness Clinic, we believe in a patient-centric approach that focuses on
+                        At <span style="font-weight: bold;">Kapsveda Wellness Clinic</span>, we believe in a
+                        patient-centric approach that focuses on
                         personalized treatment plans tailored to individual needs. Whether you are dealing with chronic
                         pain, recovering from an injury, seeking weight loss solutions, or looking for pregnancy and
-                        postnatal fitness programs, we offer comprehensive and customized care to ensure the best
+                        postnatal fitness programs, we offer <span style="font-weight: bold;">comprehensive and
+                            customized care</span> to ensure the best
                         outcomes.</p>
 
                     <ul class="features-list">
                         <li><i class="fas fa-check"></i> Expert medical support</li>
                         <li><i class="fas fa-check"></i> Trusted wellness services</li>
+                        <li><i class="fas fa-check"></i> Personalized treatment plans</li>
+                        <li><i class="fas fa-check"></i> Holistic healing approach</li>
                     </ul>
 
                     <button class="btn-primary">Know more</button>
                 </div>
                 <div class="about-image">
-                    <div class="medical-icon">
-                        <i class="fas fa-cross"></i>
-                    </div>
-                    <div class="hand-graphic"></div>
+                    <img src="https://www.stylecraze.com/wp-content/uploads/2014/09/2548-5-Effective-Yoga-Poses-To-Increase-Your-Stamina-SS_1200px.jpg.webp"
+                        alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team">
+    <!-- Founder Section -->
+    <section id="founder" class="founder">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Our team</span>
+                <span class="section-badge">Our Founder</span>
+                <h2>Meet Dr. Puja Shukla</h2>
+
+                <p class="qualifications">MPT, MD(AM), DNHE, MIMCHN, DNYS, DAP</p>
             </div>
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-img"></div>
-                    <h3>Dr. Test pixel</h3>
-                    <p>Neurosurgeon</p>
+            <div class="founder-content">
+                <div class="founder-info">
+                    <div class="founder-image">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Dr. Puja Shukla">
+                    </div>
+                    <div class="founder-details">
+                        <div class="founder-description">
+                            <p>Dr. Puja Shukla is the founder and leading specialist at Kapsveda Wellness Clinic. With
+                                extensive experience in pain management, physiotherapy, and holistic wellness, she has
+                                been transforming lives since 2015. She holds multiple prestigious qualifications,
+                                including MPT, MD (AM), DNHE, MIMCHN, DNYS, and DAP, which reflect her expertise in
+                                various health disciplines.</p>
+                            <p>Dr. Shukla is a renowned pain and weight management expert known for her integrative
+                                approach to healthcare. She is a proud member of the Association of Manual Orthopedic
+                                Physical Therapists (AOMPT) and has contributed significantly to research and
+                                publications in the field of health and wellness. Her deep understanding of both modern
+                                and alternative medicine allows her to offer innovative treatments that provide lasting
+                                relief and long-term health benefits.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="team-card">
-                    <div class="team-img"></div>
-                    <h3>Dr. Test pixel</h3>
-                    <p>Neurosurgeon</p>
+                <div class="specifications">
+                    <h3>Our Specifications</h3>
+                    <div class="spec-grid">
+                        <div class="spec-item">
+                            <div class="spec-number">9+</div>
+                            <div class="spec-label">Years of Experience</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-number">4k+</div>
+                            <div class="spec-label">Successful Transformations</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-number">12k+</div>
+                            <div class="spec-label">Satisfied Patients</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-number">97%</div>
+                            <div class="spec-label">Positive Feedback</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="team-card">
-                    <div class="team-img"></div>
-                    <h3>Dr. Test pixel</h3>
-                    <p>Neurosurgeon</p>
-                </div>
-            </div>
-            <div class="team-cta">
-                <button class="btn-primary">Know more</button>
             </div>
         </div>
     </section>
@@ -148,48 +187,49 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">Why Choose Us</span>
+                <h2>What Makes Us Different</h2>
             </div>
             <div class="trust-indicators">
                 <div class="trust-item">
                     <div class="trust-icon">
-                        <i class="fas fa-headset"></i>
+                        <i class="fas fa-user-md"></i>
                         <span class="number">01</span>
                     </div>
-                    <h3>Trusted</h3>
-                    <p>believe in our service & Care</p>
+                    <h3>Expert Care</h3>
+                    <p>Experienced healthcare professionals</p>
                 </div>
                 <div class="arrow">
                     <i class="fas fa-arrow-right"></i>
                 </div>
                 <div class="trust-item">
                     <div class="trust-icon">
-                        <i class="fas fa-headset"></i>
+                        <i class="fas fa-heart"></i>
                         <span class="number">02</span>
                     </div>
-                    <h3>Trusted</h3>
-                    <p>believe in our service & Care</p>
+                    <h3>Personalized</h3>
+                    <p>Tailored treatment plans for you</p>
                 </div>
                 <div class="arrow">
                     <i class="fas fa-arrow-right"></i>
                 </div>
                 <div class="trust-item">
                     <div class="trust-icon">
-                        <i class="fas fa-headset"></i>
+                        <i class="fas fa-clock"></i>
                         <span class="number">03</span>
                     </div>
-                    <h3>Trusted</h3>
-                    <p>believe in our service & Care</p>
+                    <h3>24/7 Support</h3>
+                    <p>Round the clock medical assistance</p>
                 </div>
                 <div class="arrow">
                     <i class="fas fa-arrow-right"></i>
                 </div>
                 <div class="trust-item">
                     <div class="trust-icon">
-                        <i class="fas fa-headset"></i>
+                        <i class="fas fa-shield-alt"></i>
                         <span class="number">04</span>
                     </div>
-                    <h3>Trusted</h3>
-                    <p>believe in our service & Care</p>
+                    <h3>Safe & Secure</h3>
+                    <p>Your health and privacy protected</p>
                 </div>
             </div>
         </div>
@@ -200,103 +240,192 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">services</span>
-                <h2>Our Professional Services</h2>
+                <h2>Our Services – Healing Through Holistic Care</h2>
+                <p>Personalized treatments combining modern medicine with traditional healing for pain relief, wellness,
+                    and recovery.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-heartbeat"></i>
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                    alt="Weight Loss">
+                            </div>
+                            <div class="service-title">
+                                <h3>Personalized Weight Loss Programs</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <div class="service-icon">
+                                <i class="fas fa-weight"></i>
+                            </div>
+                            <h3>Personalized Weight Loss Programs</h3>
+                            <p>Tailored weight loss plans integrating diet, exercise, and holistic therapies for
+                                sustainable, long-term health benefits.</p>
+                            <a href="#" class="service-link">View more details</a>
+                        </div>
                     </div>
-                    <h3>Full health control</h3>
-                    <p>personalized support that keeps you strong, balanced, and feeling your very best every day.</p>
-                    <a href="#" class="service-link">View more details</a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-heartbeat"></i>
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                    alt="Nutrition">
+                            </div>
+                            <div class="service-title">
+                                <h3>Diet & Nutrition Consultation</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <div class="service-icon">
+                                <i class="fas fa-apple-alt"></i>
+                            </div>
+                            <h3>Diet & Nutrition Consultation</h3>
+                            <p>Expert dietary guidance to improve health, manage conditions, and support overall
+                                wellness through balanced nutrition.</p>
+                            <a href="#" class="service-link">View more details</a>
+                        </div>
                     </div>
-                    <h3>Full health control</h3>
-                    <p>personalized support that keeps you strong, balanced, and feeling your very best every day.</p>
-                    <a href="#" class="service-link">View more details</a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-heartbeat"></i>
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                    alt="Lifestyle Disease">
+                            </div>
+                            <div class="service-title">
+                                <h3>Lifestyle Disease Therapy</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <div class="service-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3>Lifestyle Disease Therapy</h3>
+                            <p>Holistic treatment for diabetes, hypertension, and metabolic disorders, promoting
+                                long-term health through lifestyle modifications.</p>
+                            <a href="#" class="service-link">View more details</a>
+                        </div>
                     </div>
-                    <h3>Full health control</h3>
-                    <p>personalized support that keeps you strong, balanced, and feeling your very best every day.</p>
-                    <a href="#" class="service-link">View more details</a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-heartbeat"></i>
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                    alt="Physiotherapy">
+                            </div>
+                            <div class="service-title">
+                                <h3>Physiotherapy</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <div class="service-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <h3>Physiotherapy</h3>
+                            <p>Advanced rehabilitation techniques to restore mobility, reduce pain, and enhance overall
+                                physical function for a better quality of life.</p>
+                            <a href="#" class="service-link">View more details</a>
+                        </div>
                     </div>
-                    <h3>Full health control</h3>
-                    <p>personalized support that keeps you strong, balanced, and feeling your very best every day.</p>
-                    <a href="#" class="service-link">View more details</a>
                 </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                    alt="Panchkarma">
+                            </div>
+                            <div class="service-title">
+                                <h3>Panchkarma Therapy</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <div class="service-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>Panchkarma Therapy</h3>
+                            <p>Traditional Ayurvedic detoxification therapy to cleanse the body, boost immunity, and
+                                restore balance for optimal health.</p>
+                            <a href="#" class="service-link">View more details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                    alt="Pregnancy Fitness">
+                            </div>
+                            <div class="service-title">
+                                <h3>Pregnancy & Postnatal Fitness Program</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <div class="service-icon">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                            <h3>Pregnancy & Postnatal Fitness Program</h3>
+                            <p>Specialized fitness and wellness plans for a healthy pregnancy, smooth delivery, and
+                                effective postnatal recovery.</p>
+                            <a href="#" class="service-link">View more details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="#" class="btn btn-primary">See All Services</a>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq">
+    <section class="why-choose-us">
         <div class="container">
-            <div class="faq-content">
-                <div class="faq-text">
-                    <span class="section-badge">FAQs</span>
-                    <h2>Questions people often ask</h2>
+            <div class="section-header">
+                <h2>Why Choose Us?</h2>
+                <p class="section-description">
+                    Expert care, personalized treatments, and a holistic approach to pain relief, weight management, and
+                    wellness—led by Dr. Puja Shukla for lasting health benefits.
+                </p>
+            </div>
 
-                    <div class="faq-accordion">
-                        <div class="faq-item active">
-                            <div class="faq-question">
-                                <h3>What services do you offer?</h3>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>We provide a full range of healthcare services, including primary care, diagnostics,
-                                    specialist consultations, and wellness programs.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>Do you accept insurance?</h3>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Yes, we accept most major insurance plans. Please contact us to verify your specific
-                                    coverage.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>Do I need an appointment?</h3>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>While appointments are recommended for better service, we do accommodate walk-ins
-                                    based on availability.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>How can I access my test results?</h3>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Test results are typically available within 24-48 hours and can be accessed through
-                                    our patient portal or by contacting our office.</p>
-                            </div>
-                        </div>
+            <div class="why-choose-grid">
+                <div class="why-choose-card">
+                    <div class="card-icon">
+                        <img src="Group-1070.png" alt="Personalized Treatment">
                     </div>
-
-                    <button class="btn-primary">Know more</button>
+                    <h3>Personalized Treatment Plans</h3>
+                    <p>Tailored to each patient's unique needs.</p>
                 </div>
-                <div class="faq-image">
-                    <div class="confused-woman"></div>
+
+                <div class="why-choose-card">
+                    <div class="card-icon">
+                        <img src="Group-1070.png" alt="Expertise in Therapies">
+                    </div>
+                    <h3>Modern & Traditional Therapies</h3>
+                    <p>Expertise in both for holistic healing.</p>
+                </div>
+
+                <div class="why-choose-card">
+                    <div class="card-icon">
+                        <img src="Group-1070.png" alt="Facilities">
+                    </div>
+                    <h3>State-of-the-Art Facilities</h3>
+                    <p>Ensuring high-quality care at every step.</p>
+                </div>
+
+                <div class="why-choose-card">
+                    <div class="card-icon">
+                        <img src="Group-1070.png" alt="Compassionate Approach">
+                    </div>
+                    <h3>Compassionate & Professional</h3>
+                    <p>Approach for long-term wellness and trust.</p>
                 </div>
             </div>
         </div>
@@ -306,22 +435,32 @@
     <section class="testimonials">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">FAQs</span>
+                <span class="section-badge">Testimonials</span>
                 <h2>What people say</h2>
             </div>
             <div class="testimonials-slider">
                 <div class="testimonial-card">
                     <div class="testimonial-profile"></div>
                     <div class="testimonial-content">
-                        <h3>Marry J</h3>
-                        <p>Delightpixels is a wonderful designer have worked with so far</p>
+                        <h3>Priya Sharma</h3>
+                        <p>"Kapsveda Wellness Clinic transformed my life. Their pain management program helped me
+                            recover from chronic back pain."</p>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-profile"></div>
                     <div class="testimonial-content">
-                        <h3>Sarah M</h3>
-                        <p>Excellent medical care and professional staff. Highly recommended!</p>
+                        <h3>Rajesh Kumar</h3>
+                        <p>"Excellent medical care and professional staff. The physiotherapy sessions were incredibly
+                            effective."</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-profile"></div>
+                    <div class="testimonial-content">
+                        <h3>Anjali Patel</h3>
+                        <p>"The weight management program at Kapsveda helped me achieve my health goals naturally and
+                            sustainably."</p>
                     </div>
                 </div>
             </div>
@@ -341,7 +480,7 @@
         <div class="container">
             <div class="contact-content">
                 <div class="contact-form">
-                    <span class="section-badge">FAQs</span>
+                    <span class="section-badge">Contact</span>
                     <h2>Get in touch</h2>
 
                     <form class="contact-form-wrapper">
@@ -357,16 +496,18 @@
 
                         <div class="form-group">
                             <select>
-                                <option>Real Estate</option>
-                                <option>Healthcare</option>
-                                <option>Technology</option>
+                                <option>Select Service</option>
+                                <option>Pain Management</option>
+                                <option>Physiotherapy</option>
+                                <option>Weight Management</option>
+                                <option>Pregnancy Care</option>
                             </select>
                             <i class="fas fa-chevron-down"></i>
                         </div>
 
                         <div class="form-group">
                             <textarea placeholder="Type Your Message" rows="4"></textarea>
-                            <i class="fas fa-search"></i>
+                            <i class="fas fa-comment"></i>
                         </div>
 
                         <button type="submit" class="btn-primary">Get in touch</button>
@@ -384,8 +525,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3 class="footer-logo">Test</h3>
-                    <p>Health care website design</p>
+                    <h3 class="footer-logo">Kapsveda</h3>
+                    <p>Holistic Healing, Lasting Wellness</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -397,35 +538,35 @@
                 <div class="footer-column">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Our Branch</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#careers">Careers</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-column">
-                    <h4>Resources</h4>
+                    <h4>Services</h4>
                     <ul>
-                        <li><a href="#">Free eBooks</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">How to - Blog</a></li>
-                        <li><a href="#">Youtube Channel</a></li>
+                        <li><a href="#pain-management">Pain Management</a></li>
+                        <li><a href="#physiotherapy">Physiotherapy</a></li>
+                        <li><a href="#weight-management">Weight Management</a></li>
+                        <li><a href="#pregnancy-care">Pregnancy Care</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-column">
                     <h4>Help</h4>
                     <ul>
-                        <li><a href="#">Customer Support</a></li>
-                        <li><a href="#">Delivery Details</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#support">Customer Support</a></li>
+                        <li><a href="#appointment">Book Appointment</a></li>
+                        <li><a href="#terms">Terms & Conditions</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Designed by Test pixels</p>
+                <p>&copy; 2024 Kapsveda Wellness Clinic. All rights reserved.</p>
             </div>
         </div>
     </footer>
