@@ -563,3 +563,129 @@ const mobileMenuStyles = `
 const mobileStyle = document.createElement('style');
 mobileStyle.textContent = mobileMenuStyles;
 document.head.appendChild(mobileStyle); 
+
+// Enhanced Animation System
+document.addEventListener('DOMContentLoaded', () => {
+  // Initial hero animations
+  const fadeEls = document.querySelectorAll('.animate-fade-in');
+  const slideEls = document.querySelectorAll('.animate-slide-up');
+  
+  fadeEls.forEach((el, i) => {
+    setTimeout(() => {
+      el.style.opacity = 1;
+      el.style.animationPlayState = 'running';
+    }, i * 200);
+  });
+  
+  slideEls.forEach((el, i) => {
+    setTimeout(() => {
+      el.style.opacity = 1;
+      el.style.animationPlayState = 'running';
+    }, i * 200 + 200);
+  });
+
+  // Scroll-triggered animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated');
+        
+        // Add staggered animations for child elements
+        const children = entry.target.querySelectorAll('.animate-slide-up, .animate-fade-in');
+        children.forEach((child, index) => {
+          setTimeout(() => {
+            child.style.opacity = 1;
+            child.style.animationPlayState = 'running';
+          }, index * 150);
+        });
+      }
+    });
+  }, observerOptions);
+
+  // Observe all scroll-triggered elements
+  const scrollElements = document.querySelectorAll('.animate-on-scroll');
+  scrollElements.forEach(el => observer.observe(el));
+
+  // Enhanced hover animations
+  const serviceCards = document.querySelectorAll('.service-card');
+  serviceCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-10px) scale(1.02)';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'translateY(0) scale(1)';
+    });
+  });
+
+  // Trust items hover effects
+  const trustItems = document.querySelectorAll('.trust-item');
+  trustItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const icon = item.querySelector('.trust-icon i');
+      if (icon) {
+        icon.style.transform = 'scale(1.2)';
+        icon.style.color = '#007F24';
+      }
+    });
+    
+    item.addEventListener('mouseleave', () => {
+      const icon = item.querySelector('.trust-icon i');
+      if (icon) {
+        icon.style.transform = 'scale(1)';
+        icon.style.color = '';
+      }
+    });
+  });
+
+  // Spec items hover effects
+  const specItems = document.querySelectorAll('.spec-item');
+  specItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const number = item.querySelector('.spec-number');
+      if (number) {
+        number.style.transform = 'scale(1.1)';
+        number.style.color = '#007F24';
+      }
+    });
+    
+    item.addEventListener('mouseleave', () => {
+      const number = item.querySelector('.spec-number');
+      if (number) {
+        number.style.transform = 'scale(1)';
+        number.style.color = '';
+      }
+    });
+  });
+
+  // Enhanced button animations
+  const buttons = document.querySelectorAll('.btn-primary, .btn-secondary');
+  buttons.forEach(button => {
+    button.addEventListener('mouseenter', () => {
+      button.style.transform = 'translateY(-2px)';
+      button.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
+    });
+    
+    button.addEventListener('mouseleave', () => {
+      button.style.transform = 'translateY(0)';
+      button.style.boxShadow = '';
+    });
+  });
+
+  // Image hover effects
+  const images = document.querySelectorAll('.about-image img, .founder-image img');
+  images.forEach(img => {
+    img.addEventListener('mouseenter', () => {
+      img.style.transform = 'scale(1.05)';
+    });
+    
+    img.addEventListener('mouseleave', () => {
+      img.style.transform = 'scale(1)';
+    });
+  });
+}); 
