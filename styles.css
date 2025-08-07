@@ -166,7 +166,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #27cc2c 0%, #8edc96 100%);
+    background: linear-gradient(135deg, #161716 0%, #499150 100%);
     padding: 120px 0 80px;
     min-height: 100vh;
     display: flex;
@@ -189,7 +189,7 @@ body {
 
 .hero-text p {
     font-size: 1.2rem;
-    color: #4d4d4d;
+    color: #c8c4c4;
     margin-bottom: 2rem;
 }
 
@@ -235,7 +235,7 @@ body {
 }
 
 .rating-text {
-    color: #333;
+    color: #ffffff;
     font-weight: 500;
 }
 
@@ -538,7 +538,7 @@ body {
 /* About Section */
 .about {
     padding: 80px 0;
-    background: #E8F5E9;
+    background: linear-gradient(53deg, #161716 0%, #499150 100%);
 }
 
 .about-content {
@@ -550,12 +550,12 @@ body {
 
 .about-text h2 {
     font-size: 2.5rem;
-    color: #2E7D32;
+    color: #e3eae4;
     margin-bottom: 1.5rem;
 }
 
 .about-text p {
-    color: #666;
+    color: #d4d4d4;
     margin-bottom: 2rem;
     font-size: 1.1rem;
 }
@@ -570,7 +570,7 @@ body {
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #cbc9c9;
 }
 
 .features-list i {
@@ -673,14 +673,14 @@ body {
 }
 
 .specifications {
-    background: #E8F5E9;
+    background: #2E7D32;
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .specifications h3 {
-    color: #2E7D32;
+    color: #e4e6e4;
     font-size: 1.5rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -729,7 +729,7 @@ body {
 /* Why Choose Us Section */
 .why-choose-us {
     padding: 80px 0;
-    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    background: #2E7D32;
     position: relative;
     overflow: hidden;
 }
@@ -756,7 +756,7 @@ body {
 }
 
 .why-choose-us .section-header h2 {
-    color: #2E7D32;
+    color: #cfe6d0;
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
@@ -771,12 +771,12 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: linear-gradient(90deg, #2E7D32, #4CAF50);
+    background: #c8c4c4;
     border-radius: 2px;
 }
 
 .why-choose-us .section-description {
-    color: #555;
+    color: #d4d4d4;
     font-size: 1.2rem;
     line-height: 1.6;
     max-width: 800px;
@@ -1291,13 +1291,14 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: #2E7D32;
+    background: #f0f0f0;
+    border: #007F24 8px solid;
     position: relative;
 }
 
 /* Footer */
 .footer {
-    background: #E8F5E9;
+    background: linear-gradient(0deg, #161716 0%, #499150 100%);
     padding: 60px 0 20px;
 }
 
@@ -1309,13 +1310,13 @@ body {
 }
 
 .footer-logo {
-    color: #2E7D32;
+    color: #d6edd9;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
 .footer-column p {
-    color: #666;
+    color: #d8d8d8;
     margin-bottom: 1rem;
 }
 
@@ -1342,7 +1343,7 @@ body {
 }
 
 .footer-column h4 {
-    color: #333;
+    color: #d0eac6;
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -1356,7 +1357,7 @@ body {
 }
 
 .footer-column ul li a {
-    color: #666;
+    color: #fbfbfb;
     text-decoration: none;
     transition: color 0.3s ease;
 }
