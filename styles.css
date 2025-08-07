@@ -166,7 +166,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    background: linear-gradient(135deg, #27cc2c 0%, #8edc96 100%);
     padding: 120px 0 80px;
     min-height: 100vh;
     display: flex;
@@ -182,14 +182,14 @@ body {
 
 .hero-text h1 {
     font-size: 3.5rem;
-    color: #2E7D32;
+    color: #ffffff;
     margin-bottom: 1.5rem;
     line-height: 1.2;
 }
 
 .hero-text p {
     font-size: 1.2rem;
-    color: #666;
+    color: #4d4d4d;
     margin-bottom: 2rem;
 }
 
