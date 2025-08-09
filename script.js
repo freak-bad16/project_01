@@ -696,7 +696,7 @@ document.addEventListener('DOMContentLoaded', () => {
       img.style.transform = 'scale(1)';
     });
   });
-}); 
+});
 
 
 const servicesData = [
@@ -704,37 +704,43 @@ const servicesData = [
     title: "Personalized Weight Loss Programs",
     description: "Tailored weight loss plans integrating diet, exercise, and holistic therapies for sustainable, long-term health benefits.",
     icon: "fas fa-weight",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#personalized-weight-loss-programs"
   },
   {
     title: "Diet & Nutrition Consultation",
     description: "Expert dietary guidance to improve health, manage conditions, and support overall wellness through balanced nutrition.",
     icon: "fas fa-apple-alt",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#diet-nutrition-consultation"
   },
   {
     title: "Lifestyle Disease Therapy",
     description: "Comprehensive treatment for lifestyle-related conditions through holistic approaches and personalized care plans.",
     icon: "fas fa-heartbeat",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#lifestyle-disease-therapy"
   },
   {
     title: "Physiotherapy",
     description: "Advanced rehabilitation techniques to restore mobility, reduce pain, and enhance overall physical function for a better quality of life.",
     icon: "fas fa-dumbbell",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#physiotherapy"
   },
   {
     title: "Panchkarma Therapy",
     description: "Traditional Ayurvedic detoxification therapy to cleanse the body, boost immunity, and restore balance for optimal health.",
     icon: "fas fa-leaf",
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#panchkarma-therapy"
   },
   {
     title: "Pregnancy & Postnatal Fitness Program",
     description: "Specialized fitness and wellness plans for a healthy pregnancy, smooth delivery, and effective postnatal recovery.",
     icon: "fas fa-baby",
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#pregnancy-postnatal-fitness-program"
   }
 ];
 
@@ -758,11 +764,10 @@ servicesData.forEach((service, index) => {
           </div>
           <h3>${service.title}</h3>
           <p>${service.description}</p>
-          <a href="#" class="service-link">View more details</a>
+          <a href="service_details.html?index=${index}" class="service-link">View more details</a>
         </div>
       </div>
     </div>
   `;
-
   servicesGrid.insertAdjacentHTML("beforeend", cardHTML);
 });

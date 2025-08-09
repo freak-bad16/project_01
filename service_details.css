@@ -1,0 +1,95 @@
+/* General body and main container styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.service-details-main {
+    padding: 40px 20px;
+    height: 100vh;
+    background: linear-gradient(0deg, #161716 0%, #499150 100%);
+}
+
+/* Service details container and card */
+.service-details-container {
+    max-width: 960px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.service-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Image styling */
+.service-image-container {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-detail-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-detail-img:hover {
+    transform: scale(1.05);
+}
+
+/* Content styling */
+.service-detail-content {
+    text-align: center;
+}
+
+.service-detail-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: rgb(239, 241, 239);
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #161716;
+    display: inline-block;
+}
+
+.service-detail-text {
+    font-size: 1.1em;
+    color: rgb(239, 241, 239);
+    text-align: justify;
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 768px) {
+    .service-card-details {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .service-image-container {
+        width: 45%;
+    }
+
+    .service-detail-content {
+        flex: 1;
+        text-align: left;
+    }
+
+    .service-detail-title {
+        text-align: left;
+    }
+}
