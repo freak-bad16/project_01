@@ -701,48 +701,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const servicesData = [
   {
-    title: "Personalized Weight Loss Programs",
-    description: "Tailored weight loss plans integrating diet, exercise, and holistic therapies for sustainable, long-term health benefits.",
-    icon: "fas fa-weight",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-    link: "#personalized-weight-loss-programs"
-  },
-  {
-    title: "Diet & Nutrition Consultation",
-    description: "Expert dietary guidance to improve health, manage conditions, and support overall wellness through balanced nutrition.",
-    icon: "fas fa-apple-alt",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-    link: "#diet-nutrition-consultation"
-  },
-  {
-    title: "Lifestyle Disease Therapy",
-    description: "Comprehensive treatment for lifestyle-related conditions through holistic approaches and personalized care plans.",
-    icon: "fas fa-heartbeat",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-    link: "#lifestyle-disease-therapy"
-  },
-  {
-    title: "Physiotherapy",
-    description: "Advanced rehabilitation techniques to restore mobility, reduce pain, and enhance overall physical function for a better quality of life.",
-    icon: "fas fa-dumbbell",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-    link: "#physiotherapy"
-  },
-  {
-    title: "Panchkarma Therapy",
-    description: "Traditional Ayurvedic detoxification therapy to cleanse the body, boost immunity, and restore balance for optimal health.",
-    icon: "fas fa-leaf",
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-    link: "#panchkarma-therapy"
-  },
-  {
-    title: "Pregnancy & Postnatal Fitness Program",
-    description: "Specialized fitness and wellness plans for a healthy pregnancy, smooth delivery, and effective postnatal recovery.",
+    title: "Garbhsanskar Therapy (गर्भसंस्कार थेरेपी)",
+    description: "Holistic program for baby brain development and values enrichment during pregnancy, ensuring a healthy start for both mother and child.",
     icon: "fas fa-baby",
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-    link: "#pregnancy-postnatal-fitness-program"
+    image: "https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#garbhsanskar-therapy"
+  },
+  {
+    title: "Prenatal & Postnatal Yoga (गर्भपूर्व व प्रसवोत्तर योग)",
+    description: "Safe and gentle yoga routines designed to promote a healthy pregnancy, aid in delivery, and support faster postnatal recovery.",
+    icon: "fas fa-praying-hands",
+    image: "https://images.unsplash.com/photo-1603381445086-4ee2d5d9c77d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#prenatal-postnatal-yoga"
+  },
+  {
+    title: "Migraine & Thyroid Natural Management",
+    description: "Natural healing methods to manage migraine headaches and thyroid issues without medication, improving energy and hormonal balance.",
+    icon: "fas fa-brain",
+    image: "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#migraine-thyroid-management"
+  },
+  {
+    title: "Female Wellness (स्त्री स्वास्थ्य देखभाल)",
+    description: "Specialized care for PCOD, menstrual irregularities, infertility, and hormonal imbalances to restore overall women’s health.",
+    icon: "fas fa-female",
+    image: "https://images.unsplash.com/photo-1617634667039-8a98f54ec1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#female-wellness"
+  },
+  {
+    title: "Child Brain & Memory Boost Programs",
+    description: "Engaging activities and techniques to enhance children’s focus, speech, IQ, and moral development for lifelong benefits.",
+    icon: "fas fa-child",
+    image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#child-brain-memory"
+  },
+  {
+    title: "Herbal Detox & Diet Consultation",
+    description: "Personalized herbal detox and diet plans for weight loss, glowing skin, and improved vitality using natural remedies.",
+    icon: "fas fa-leaf",
+    image: "https://images.unsplash.com/photo-1505575967455-40e256f73376?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#herbal-detox-diet"
+  },
+  {
+    title: "Pain & Rehab Therapy (दर्द व पुनर्वास चिकित्सा)",
+    description: "Therapeutic solutions for joint pain, back pain, frozen shoulder, and post-surgery rehabilitation to restore mobility and comfort.",
+    icon: "fas fa-hand-holding-medical",
+    image: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#pain-rehab-therapy"
+  },
+  {
+    title: "Emotional & Mental Wellness Counseling",
+    description: "Confidential counseling to manage stress, anxiety, pregnancy blues, and build confidence for a happier, balanced life.",
+    icon: "fas fa-smile-beam",
+    image: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    link: "#emotional-mental-wellness"
   }
 ];
+
 
 const servicesGrid = document.getElementById("servicesGrid");
 
@@ -770,4 +785,30 @@ servicesData.forEach((service, index) => {
     </div>
   `;
   servicesGrid.insertAdjacentHTML("beforeend", cardHTML);
+});
+
+
+
+
+ // When "Get started" is clicked → send email to WhatsApp
+    document.getElementById("getStartedBtn").addEventListener("click", function () {
+        let email = document.getElementById("emailInput").value.trim();
+        if (email) {
+            let message = `Hello! My email is ${email}`;
+            let phoneNumber = "918789772081"; // country code + number
+            let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappURL, "_blank");
+        } else {
+            alert("Please enter your email first.");
+        }
+    });
+
+    // When "Call" is clicked → start phone call
+    document.getElementById("callBtn").addEventListener("click", function () {
+        window.location.href = "tel:+917355227127";
+    });
+
+
+    document.getElementById("know-more-btn").addEventListener("click", function () {
+    window.location.href = "about_us.html";
 });

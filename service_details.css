@@ -11,7 +11,7 @@ body {
 .service-details-main {
     padding: 40px 20px;
     height: 100vh;
-    background: linear-gradient(0deg, #161716 0%, #499150 100%);
+    background: linear-gradient(180deg, #161716 0%, #499150 100%);
 }
 
 /* Service details container and card */
@@ -33,7 +33,7 @@ body {
 
 /* Image styling */
 .service-image-container {
-    width: 100%;
+    width: 60%;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);

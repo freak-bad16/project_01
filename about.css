@@ -1,0 +1,136 @@
+/* General Reset */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #faf9f6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Styling */
+.about-detail {
+    padding: 50px 20px;
+    background: linear-gradient(180deg, #161716 0%, #499150 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    color: #fff; /* Makes all text inside white */
+}
+
+/* Heading */
+.about-detail h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #fff; /* White heading */
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.about-detail h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #c59d5f;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Image */
+.about-detail img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Text */
+.about-detail p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: justify;
+    color: #fff;
+}
+
+.about-detail strong {
+    color: #ffd27f; /* Light gold highlight for emphasis */
+}
+
+/* List */
+.about-detail ul {
+    margin: 10px 0 20px 20px;
+    padding-left: 15px;
+    color: #fff;
+}
+
+.about-detail ul li {
+    margin-bottom: 8px;
+    list-style: disc;
+}
+
+/* Button */
+.btn-primary {
+    display: inline-block;
+    background-color: #c59d5f;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #b48b4d;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .about-detail h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-detail {
+        padding: 30px 15px;
+    }
+}
+
+
+/* Info Box Styling */
+.info-box {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(6px);
+}
+
+.info-box h2 {
+    font-size: 1.5rem;
+    color: #ffd700; /* Gold heading */
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
+}
+
+.info-box p {
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0;
+}
