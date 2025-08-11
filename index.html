@@ -84,9 +84,10 @@
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/918789772081" target="_blank" class="whatsapp-float"
-        style="position: fixed; bottom: 100px; right: 30px; width: 50px; height: 50px; background: #25D366; color: white; border: none; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; z-index: 1000; box-shadow: 0 4px 8px rgba(0,0,0,0.3); transition: 0.3s;">
+        style="position: fixed; bottom: 100px; right: 30px; width: 50px; height: 50px; background: #25D366; color: white; border: none; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; z-index: 1000; box-shadow: 0 4px 8px rgba(0,0,0,0.3); transition: 0.3s; text-decoration: none;">
         <i class="fab fa-whatsapp"></i>
     </a>
+
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -137,8 +138,10 @@
                 <span class="section-badge animate-slide-up"
                     style="color: rgb(243, 235, 235); background-color: #2E7032;">Our Founder</span>
                 <h2 class="animate-slide-up" style="animation-delay: 0.2s">Meet Dr. Puja Shukla</h2>
-                <p class="qualifications animate-fade-in" style="animation-delay: 0.4s">MPT, MD(AM), DNHE, MIMCHN, DNYS,
-                    DAP</p>
+                <p class="qualifications animate-fade-in" style="animation-delay: 0.4s">
+                    (MPT, MD (A.M.), DNHE, MCHN, DNYS, DAP, Garbhsanskar Expert) – Pain, Obesity & Women’s Wellness
+                    Specialist in Kanpur
+                </p>
             </div>
             <div class="founder-content">
                 <div class="founder-info animate-on-scroll">
@@ -147,44 +150,105 @@
                     </div>
                     <div class="founder-details animate-fade-in" style="animation-delay: 0.3s">
                         <div class="founder-description">
-                            <p class="animate-slide-up" style="animation-delay: 0.5s">Dr. Puja Shukla is the founder and
-                                leading specialist at Kapsveda Wellness Clinic. With
-                                extensive experience in pain management, physiotherapy, and holistic wellness, she has
-                                been transforming lives since 2015. She holds multiple prestigious qualifications,
-                                including MPT, MD (AM), DNHE, MIMCHN, DNYS, and DAP, which reflect her expertise in
-                                various health disciplines.</p>
-                            <p class="animate-slide-up" style="animation-delay: 0.7s">Dr. Shukla is a renowned pain and
-                                weight management expert known for her integrative
-                                approach to healthcare. She is a proud member of the Association of Manual Orthopedic
-                                Physical Therapists (AOMPT) and has contributed significantly to research and
-                                publications in the field of health and wellness. Her deep understanding of both modern
-                                and alternative medicine allows her to offer innovative treatments that provide lasting
-                                relief and long-term health benefits.</p>
+                            <p class="animate-slide-up" style="animation-delay: 0.5s">
+                                <strong>Dr. Puja Shukla</strong> is a trusted <strong>Women’s Health Expert</strong>,
+                                <strong>Nutritionist</strong>, and
+                                <strong>Lifestyle Disorder Specialist</strong> in Kanpur, Uttar Pradesh. She is known
+                                for her expertise in
+                                <strong>natural healing</strong>, <strong>preventive healthcare</strong>, and
+                                <strong>holistic well-being</strong>,
+                                offering <strong>non-invasive</strong>, result-oriented therapies that target the root
+                                cause of health issues.
+                            </p>
+                            <p class="animate-slide-up" style="animation-delay: 0.7s">
+                                With years of clinical experience, she provides advanced <strong>Pain
+                                    Management</strong> solutions for
+                                back pain, neck pain, knee pain, and sciatica without surgery. Her <strong>Weight
+                                    Reduction</strong> &
+                                <strong>Nutrition Programs</strong> are customized to help clients lose weight, improve
+                                metabolism,
+                                and boost energy naturally.
+                            </p>
+                            <p class="animate-slide-up" style="animation-delay: 0.7s">
+                                She is also an expert in <strong>Pregnancy & Postnatal Care</strong>, including
+                                <strong>pelvic floor rehabilitation</strong>, <strong>hormonal balance</strong>, and
+                                post-delivery recovery.
+                                As a <strong>Lifestyle Disorder Reversal Specialist</strong>, she works on conditions
+                                like
+                                <strong>diabetes</strong>, <strong>thyroid disorders</strong>,
+                                <strong>hypertension</strong>, <strong>migraine</strong>,
+                                and <strong>PCOD/PCOS</strong> through personalized diet, therapy, and lifestyle
+                                modification.
+                            </p>
+
+                            <!-- Dropdown for Specializations -->
+                            <div style="text-align: center; margin-top: 15px; margin-bottom: 20px;">
+                                <button onclick="toggleSpecialization()" style="
+            background: linear-gradient(135deg, #25D366, #1ebc57);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.3)'"
+                                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)'">
+                                    View Specialization
+                                </button>
+                            </div>
+
+
+                            <div id="specializationList" style="display: none; margin-top: 10px; margin-bottom: 20px;">
+                                <ul style="list-style: none; padding: 0;">
+                                    <li>✔ <strong>Pain Management</strong> – Non-surgical, advanced therapies</li>
+                                    <li>✔ <strong>Weight Loss & Nutrition</strong> – Personalized diet & wellness plans
+                                    </li>
+                                    <li>✔ <strong>Pregnancy & Postnatal Care</strong> – Recovery & rehab programs</li>
+                                    <li>✔ <strong>Lifestyle Disorder Reversal</strong> – Diabetes, thyroid, PCOS & more
+                                    </li>
+                                    <li>✔ <strong>Women’s Wellness</strong> – Hormonal & reproductive health</li>
+                                    <li>✔ <strong>Holistic Therapies</strong> – Detox, tummy toning & natural healing
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+
+                    <script>
+                        function toggleSpecialization() {
+                            const specList = document.getElementById("specializationList");
+                            specList.style.display = (specList.style.display === "none" || specList.style.display === "") ? "block" : "none";
+                        }
+                    </script>
+
+
                 </div>
-                <div class="specifications animate-on-scroll">
-                    <h3 class="animate-slide-up">Our Specifications</h3>
-                    <div class="spec-grid">
-                        <div class="spec-item animate-slide-up" style="animation-delay: 0.2s">
-                            <div class="spec-number">9+</div>
-                            <div class="spec-label">Years of Experience</div>
-                        </div>
-                        <div class="spec-item animate-slide-up" style="animation-delay: 0.4s">
-                            <div class="spec-number">4k+</div>
-                            <div class="spec-label">Successful Transformations</div>
-                        </div>
-                        <div class="spec-item animate-slide-up" style="animation-delay: 0.6s">
-                            <div class="spec-number">12k+</div>
-                            <div class="spec-label">Satisfied Patients</div>
-                        </div>
-                        <div class="spec-item animate-slide-up" style="animation-delay: 0.8s">
-                            <div class="spec-number">97%</div>
-                            <div class="spec-label">Positive Feedback</div>
-                        </div>
+            </div>
+            <div class="specifications animate-on-scroll">
+                <h3 class="animate-slide-up">Our Specifications</h3>
+                <div class="spec-grid">
+                    <div class="spec-item animate-slide-up" style="animation-delay: 0.2s">
+                        <div class="spec-number">9+</div>
+                        <div class="spec-label">Years of Experience</div>
+                    </div>
+                    <div class="spec-item animate-slide-up" style="animation-delay: 0.4s">
+                        <div class="spec-number">4k+</div>
+                        <div class="spec-label">Successful Transformations</div>
+                    </div>
+                    <div class="spec-item animate-slide-up" style="animation-delay: 0.6s">
+                        <div class="spec-number">12k+</div>
+                        <div class="spec-label">Satisfied Patients</div>
+                    </div>
+                    <div class="spec-item animate-slide-up" style="animation-delay: 0.8s">
+                        <div class="spec-number">97%</div>
+                        <div class="spec-label">Positive Feedback</div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -393,7 +457,8 @@
                 <div class="contact-image" style="width: 300px; height: 300px; overflow: hidden; border-radius: 50%;">
                     <div class="doctor-contact" style="width: 100%; height: 100%;">
                         <img src="./public/a.jpg" alt=""
-                            style="width: 100%; height: 100%; object-fit: cover; object-position: 0% -6%; scale:1.2" loading="lazy">
+                            style="width: 100%; height: 100%; object-fit: cover; object-position: 0% -6%; scale:1.2"
+                            loading="lazy">
                     </div>
                 </div>
             </div>
