@@ -175,7 +175,7 @@ if (contactForm) {
         if (service && service !== 'Select Service') whatsappMessage += `Service: ${encodeURIComponent(service)}%0A`;
         if (message) whatsappMessage += `Message: ${encodeURIComponent(message)}%0A`;
 
-        const whatsappUrl = `https://wa.me/918789772081?text=${whatsappMessage}`;
+        const whatsappUrl = `https://wa.me/7355227127?text=${whatsappMessage}`;
         window.open(whatsappUrl, '_blank');
     });
 }
@@ -894,7 +894,7 @@ servicesData.forEach((service, index) => {
 
     // When "Call" is clicked → start phone call
     document.getElementById("callBtn").addEventListener("click", function () {
-        window.location.href = "tel:+917355227127";
+        window.location.href = "tel:+918601969077";
     });
 
 
