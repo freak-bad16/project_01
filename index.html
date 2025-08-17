@@ -19,8 +19,8 @@
                 </div>
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li><a href="#home">Home</a></li>
-                        <li class="dropdown"><a href="#about">About Us</a></li>
+                        <li><a href="#about">Home</a></li>
+                        <li class="dropdown"><a href="#hii">About Us</a></li>
                         <li class="dropdown"><a href="#services">Services</a></li>
                         <li class="dropdown"><a href="gallery.html">Gallery</a></li>
                         <li class="dropdown"><a href="#contact">Contact</a></li>
@@ -42,35 +42,48 @@
             <div class="about-content">
                 <div class="about-text animate-on-scroll">
                     <div style="height: 15px;"></div>
-                    <h2 class="animate-slide-up" style="animation-delay: 0.2s">Kapsveda Wellness Clinic – Complete Wellness Under One Roof
-</h2>
+                    <h2 class="animate-slide-up" style="animation-delay: 0.2s">Kapsveda Wellness Clinic – Complete
+                        Wellness Under One Roof
+                    </h2>
                     <p class="animate-fade-in" style="animation-delay: 0.4s">
-    Welcome to <span style="font-weight: bold;">Kapsveda Wellness Clinic</span>, your trusted partner in holistic health, healing, and lifestyle transformation.
-    We proudly serve you from our two branches – <span style="font-weight: bold;">Saket Nagar</span> and <span style="font-weight: bold;">Kalyanpur, Kanpur</span>.
-    <br><br>
-    At <span style="font-weight: bold;">Kapsveda</span>, we combine the precision of modern medical science with the wisdom of traditional healing to offer safe, effective, and long-lasting results for all age groups.
-    We believe health is more than the absence of disease — it’s the balance of body, mind, and lifestyle. Every treatment here is personalized to your needs for the best possible outcomes.
-</p>
+                        Welcome to <span style="font-weight: bold;">Kapsveda Wellness Clinic</span>, your trusted
+                        partner in holistic health, healing, and lifestyle transformation.
+                        We proudly serve you from our two branches – <span style="font-weight: bold;">Saket Nagar</span>
+                        <br><br>
+                        At <span style="font-weight: bold;">Kapsveda</span>, we combine the precision of modern medical
+                        science with the wisdom of traditional healing to offer safe, effective, and long-lasting
+                        results for all age groups.
+                        We believe health is more than the absence of disease — it’s the balance of body, mind, and
+                        lifestyle. Every treatment here is personalized to your needs for the best possible outcomes.
+                    </p>
 
 
+                    <h2 class="animate-fade-in" style="animation-delay:0.5s">Why Choose Kapsveda?</h2>
                     <ul class="features-list animate-fade-in" style="animation-delay: 0.6s">
                         <li class="animate-slide-up" style="animation-delay: 0.7s"><i class="fas fa-check"></i> Expert
-                            medical support</li>
-                        <li class="animate-slide-up" style="animation-delay: 0.8s"><i class="fas fa-check"></i> Trusted
-                            wellness services</li>
+                            Doctor Support</li>
+                        <li class="animate-slide-up" style="animation-delay: 0.8s"><i class="fas fa-check"></i> Trained
+                            & Experienced Therapists</li>
                         <li class="animate-slide-up" style="animation-delay: 0.9s"><i class="fas fa-check"></i>
-                            Personalized treatment plans</li>
-                        <li class="animate-slide-up" style="animation-delay: 1.0s"><i class="fas fa-check"></i> Holistic healing approach</li>
-                        <li class="animate-slide-up" style="animation-delay: 1.0s"><i class="fas fa-check"></i> customized body type exercise </li>
-                        <li class="animate-slide-up" style="animation-delay: 1.0s"><i class="fas fa-check"></i> customized body Diet Plan</li>
-                        <li class="animate-slide-up" style="animation-delay: 1.0s"><i class="fas fa-check"></i> customized Therepy Plan</li>
+                            Personalized Treatment Plans</li>
+                        <li class="animate-slide-up" style="animation-delay: 1.0s"><i class="fas fa-check"></i> Holistic
+                            Health Approach</li>
+                        <li class="animate-slide-up" style="animation-delay: 1.1s"><i class="fas fa-check"></i>
+                            Customized Body-Type Exercises</li>
+                        <li class="animate-slide-up" style="animation-delay: 1.2s"><i class="fas fa-check"></i> Tailored
+                            Diet & Nutrition Plans</li>
+                        <li class="animate-slide-up" style="animation-delay: 1.3s"><i class="fas fa-check"></i>
+                            Specialized Therapy Programs</li>
+                        <li class="animate-slide-up" style="animation-delay: 1.4s"><i class="fas fa-check"></i> All
+                            Treatments Under One Roof</li>
                     </ul>
+
 
                     <button id="know-more-btn" class="btn-primary animate-slide-up" style="animation-delay: 1.1s">
                         Know more
                     </button>
                 </div>
-                <div class="about-image animate-float" id="cimage" style="margin-top: 15px;";>
+                <div class="about-image animate-float" id="cimage" style="margin-top: 15px;" ;>
                     <img src="./public/c.jpg" alt="">
                 </div>
             </div>
@@ -98,6 +111,10 @@
 
                     <div class="email-signup animate-fade-in" style="animation-delay:0.4s">
                         <input type="email" placeholder="Your Email Address" class="email-input" id="emailInput">
+                        <!-- Send button -->
+                        <button class="btn-primary" id="getStartedBtn">
+                            <i class="fas fa-paper-plane"></i> Send
+                        </button>
                         <button class="contact-btn">Contact us</button>
                     </div>
 
@@ -118,13 +135,21 @@
                     </div>
 
                     <div class="hero-buttons animate-fade-in" style="animation-delay:0.8s">
-                        <button class="btn-primary" id="getStartedBtn">Connect</button>
-                        <button class="btn-secondary" id="callBtn">Call</button>
+                        <div class="hero-buttons animate-fade-in" style="animation-delay:0.8s ; flex-direction: row;">
+                            <button class="btn-secondary" id="callBtn">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                            <button class="btn-secondary" onclick="window.open('https://wa.me/918601969077','_blank')">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Founder Section -->
     <section id="founder" class="founder">
@@ -134,7 +159,8 @@
                     style="color: rgb(243, 235, 235); background-color: #2E7032;">Our Founder</span>
                 <h2 class="animate-slide-up" style="animation-delay: 0.2s">Meet Dr. Puja Shukla</h2>
                 <p class="qualifications animate-fade-in" style="animation-delay: 0.4s">
-                    (MPT, MD (A.M.), DNHE, MCHN, DNYS, DAP, Garbhsanskar) – Expert in Pain, Weight & Women’s Wellness Like _ PCOD, PCOS infertility & period pain Specialist in Kanpur
+                    (MPT, MD (A.M.), DNHE, MCHN, DNYS, DAP, Garbhsanskar) – Expert in Pain, Weight & Women’s Wellness
+                    Like _ PCOD, PCOS infertility & period pain Specialist in Kanpur
                 </p>
             </div>
             <div class="founder-content">
@@ -200,14 +226,19 @@
                                     <li>✔ <strong>Pain Management</strong> – Non-surgical, advanced therapies</li>
                                     <li>✔ <strong>Weight management</strong> – Custumize diet , exercise & therapy plan
                                     </li>
-                                    <li>✔ <strong>Pregnancy fitness program </strong> – Garbhsanskar,  customize exercise & diet plan .</li>
-                                    <li>✔ <strong>Postnatal fitness program </strong> – after delivery exercise , diet plan & breast feeding problem solution.</li>
-                                    <li>✔ <strong>Lifestyle Disorder Reversal</strong> – Sugar , bp , thyroid, migraine , Infertility ( male / female) pcod & more
+                                    <li>✔ <strong>Pregnancy fitness program </strong> – Garbhsanskar, customize
+                                        exercise & diet plan .</li>
+                                    <li>✔ <strong>Postnatal fitness program </strong> – after delivery exercise , diet
+                                        plan & breast feeding problem solution.</li>
+                                    <li>✔ <strong>Lifestyle Disorder Reversal</strong> – Sugar , bp , thyroid, migraine
+                                        , Infertility ( male / female) pcod & more
                                     <li>✔ <strong>Women’s Wellness</strong> – Hormonal & reproductive health</li>
                                     <li>✔ <strong>Holistic Therapies</strong> – Body Detox, natural healing
-                                    <li>✔ <strong>Gut health solutions </strong> – Gut health solutions - constipation, fatty liver, acidity,  BMR & more
-                                    <li>✔ <strong>Pelvic floor rehab , Urine incontinence </strong> – Period pain & vaginismus, ED, prostatitis , piles , fissure
-                                        <li>✔ <strong>Kids obesity & wt gain management</strong> 
+                                    <li>✔ <strong>Gut health solutions </strong> – Gut health solutions - constipation,
+                                        fatty liver, acidity, BMR & more
+                                    <li>✔ <strong>Pelvic floor rehab , Urine incontinence </strong> – Period pain &
+                                        vaginismus, ED, prostatitis , piles , fissure
+                                    <li>✔ <strong>Kids obesity & wt gain management</strong>
                                     </li>
                                 </ul>
                             </div>
@@ -248,6 +279,88 @@
         </div>
         </div>
     </section>
+    <section id="founder" class="founder">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge animate-slide-up"
+                    style="color: rgb(243, 235, 235); background-color: #2E7032;">Our Consultant</span>
+                <h2 class="animate-slide-up" style="animation-delay: 0.2s">Meet Dr. Vivek Mishra</h2>
+                <p class="qualifications animate-fade-in" style="animation-delay: 0.4s">
+                    MBBS, MD (Medicine) – IMS, BHU | Consultant Physician
+                </p>
+            </div>
+
+            <div class="founder-content">
+                <div class="founder-info animate-on-scroll">
+                    <div class="founder-image animate-float">
+                        <img src="./public/b.jpg" alt="Dr. Vivek Mishra">
+                    </div>
+                    <div class="founder-details animate-fade-in" style="animation-delay: 0.3s">
+                        <div class="founder-description">
+                            <p class="animate-slide-up" style="animation-delay: 0.5s">
+                                <strong>Dr. Vivek Mishra</strong> is an experienced and compassionate <strong>Consultant
+                                    Physician</strong>
+                                with expertise in managing a wide range of health conditions. He specializes in
+                                <strong>lifestyle disease management</strong>,
+                                offering holistic and evidence-based treatments tailored to each patient’s needs.
+                            </p>
+                            <p class="animate-slide-up" style="animation-delay: 0.7s">
+                                With a strong academic background from <strong>IMS–BHU</strong> and clinical experience
+                                as <strong>Ex-Junior at UPUMS Saifai</strong>
+                                and <strong>Ex-RMO at Madhuraj Hospital, Kanpur</strong>, Dr. Mishra is recognized for
+                                his <strong>patient-focused approach</strong>
+                                and <strong>accurate diagnosis</strong>.
+                            </p>
+                            <p class="animate-slide-up" style="animation-delay: 0.9s">
+                                He is also associated with <strong>CCIC</strong>, ensuring updated knowledge and best
+                                practices in patient care.
+                                His goal is to provide <strong>holistic, evidence-based treatment</strong> to help
+                                patients achieve lasting health and wellness.
+                            </p>
+
+                            <!-- Dropdown for Specializations -->
+                            <div style="text-align: center; margin-top: 15px; margin-bottom: 20px;">
+                                <button onclick="toggleVivekSpecialization()" style="
+                                background: linear-gradient(135deg, #25D366, #1ebc57);
+                                color: white;
+                                border: none;
+                                padding: 10px 20px;
+                                font-size: 16px;
+                                font-weight: bold;
+                                cursor: pointer;
+                                border-radius: 25px;
+                                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                                transition: all 0.3s ease;
+                            " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.3)'"
+                                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)'">
+                                    View Specialization
+                                </button>
+                            </div>
+
+                            <div id="vivekSpecializationList"
+                                style="display: none; margin-top: 10px; margin-bottom: 20px;">
+                                <ul style="list-style: none; padding: 0;">
+                                    <li>✔ <strong>General Physician</strong> – Lifestyle Disease Management</li>
+                                    <li>✔ <strong>Diabetes & Thyroid Disorders</strong></li>
+                                    <li>✔ <strong>High Blood Pressure & Heart Diseases</strong></li>
+                                    <li>✔ <strong>Liver & Lung Conditions</strong></li>
+                                    <li>✔ <strong>Child Health & General Medicine</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        function toggleVivekSpecialization() {
+                            const specList = document.getElementById("vivekSpecializationList");
+                            specList.style.display = (specList.style.display === "none" || specList.style.display === "") ? "block" : "none";
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Why Choose Us Section -->
     <section class="why-choose-us">
@@ -322,7 +435,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="why-choose-us">
+    <section id="hii" class="why-choose-us">
         <div class="container">
             <div class="section-header">
                 <h2>Why Choose Us?</h2>
@@ -470,15 +583,18 @@
                     <h3 class="footer-logo">Kapsveda</h3>
                     <p>Holistic Healing, Lasting Wellness</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/kapsvedawellness" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/kapsveda_wellness?igsh=MWloeWpsNXdiNHFneg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/kapsvedawellness" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kapsveda_wellness?igsh=MWloeWpsNXdiNHFneg=="
+                            target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://youtube.com/@drpujashukla" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
+
                     <h4>Our Locations</h4>
-                    <ul>
-                        <li>📍 Saket Nagar, Kanpur</li>
-                        <li>📍 Kalyanpur, Kanpur</li>
-                    </ul>
+                    <div class="map-container">
+                        <h5>Saket Nagar, Kanpur</h5>
+                        <h5>Kalyanpur, Kanpur</h5>
+                    </div>
                 </div>
 
                 <div class="footer-column">
@@ -491,24 +607,30 @@
                     </ul>
                 </div>
 
-                <div class="footer-column">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#pain-management">Pain Management</a></li>
-                        <li><a href="#physiotherapy">Physiotherapy</a></li>
-                        <li><a href="#weight-management">Weight Management</a></li>
-                        <li><a href="#pregnancy-care">Pregnancy Care</a></li>
-                    </ul>
+
+                <!-- Saket Nagar Location -->
+                <div
+                    style="flex: 1; min-width: 300px; max-width: 500px; background: #fff; padding: 15px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center;">
+                    <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 10px; color: #2c3e50;">Saket Nagar,
+                        Kanpur</h3>
+                    <iframe loading="lazy"
+                        src="https://maps.google.com/maps?q=Kapsveda%20Wellness%20Clinic%7C%20Best%20Physiotherapy%20%7C%20Natural%20Therapy%20%7C%20Pain%20%26%20Weight%20Management%20Centre%20in%20Kanpur&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near"
+                        title="Kapsveda Wellness Clinic | Saket Nagar"
+                        aria-label="Kapsveda Wellness Clinic | Saket Nagar"
+                        style="width: 100%; height: 250px; border: none; border-radius: 10px;">
+                    </iframe>
                 </div>
 
-                <div class="footer-column">
-                    <h4>Help</h4>
-                    <ul>
-                        <li><a href="#support">Customer Support</a></li>
-                        <li><a href="#appointment">Book Appointment</a></li>
-                        <li><a href="#terms">Terms & Conditions</a></li>
-                        <li><a href="#privacy">Privacy Policy</a></li>
-                    </ul>
+                <!-- Kalyanpur Location -->
+                <div
+                    style="flex: 1; min-width: 300px; max-width: 500px; background: #fff; padding: 15px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center;">
+                    <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 10px; color: #2c3e50;">Kalyanpur,
+                        Kanpur</h3>
+                    <iframe loading="lazy"
+                        src="https://maps.google.com/maps?q=Kapsveda%20Wellness%20Clinic%20%7C%20Best%20Natural%20Therapy%20%7C%20Pain%20%26%20Weight%20%26%20other%20lifestyle%20disease%20Centre%20in%20Kanpur%20By%20Dr.%20Puja%20Shukla&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near"
+                        title="Kapsveda Wellness Clinic | Kalyanpur" aria-label="Kapsveda Wellness Clinic | Kalyanpur"
+                        style="width: 100%; height: 250px; border: none; border-radius: 10px;">
+                    </iframe>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -516,6 +638,8 @@
             </div>
         </div>
     </footer>
+
+
 
     <script src="script.js"></script>
 </body>

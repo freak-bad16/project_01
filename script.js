@@ -884,7 +884,7 @@ servicesData.forEach((service, index) => {
         let email = document.getElementById("emailInput").value.trim();
         if (email) {
             let message = `Hello! My email is ${email}`;
-            let phoneNumber = "918789772081"; // country code + number
+            let phoneNumber = "918601969077"; // country code + number
             let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappURL, "_blank");
         } else {
