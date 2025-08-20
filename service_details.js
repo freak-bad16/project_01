@@ -1,179 +1,367 @@
 
-const servicesData = [
-  {
-    title: "Pain Management",
-    description: "Natural therapies to relieve chronic and acute pain without invasive procedures.",
-    fullDetails: "Our Pain Management program uses physiotherapy, manual therapy, stretching, and lifestyle modifications to address the root cause of chronic pain, including joint pain, back pain, frozen shoulder, and muscle stiffness.",
-    icon: "fas fa-hand-holding-medical",
-    image: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-    link: "#pain-management"
-  },
-  {
-    title: "Weight Reduction",
-    description: "Personalized natural methods for sustainable and healthy weight loss.",
-    fullDetails: "We create customized weight loss plans involving natural detox, diet changes, physical activity, and targeted therapies to help you reduce excess weight while maintaining energy levels and overall health.",
-    icon: "fas fa-weight",
-    image: "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-    link: "#weight-reduction"
-  },
-  {
-    title: "Personalized Nutrition Therapy",
-    description: "Diet plans tailored to your health needs, lifestyle, and wellness goals.",
-    fullDetails: "Our Personalized Nutrition Therapy focuses on creating a nutrition plan that aligns with your medical conditions, lifestyle, and personal goals. We emphasize whole, natural foods to promote long-term health and vitality.",
-    icon: "fas fa-utensils",
-    image: "https://www.samudranaturopathy.com/wp-content/uploads/2023/11/Diet-Therapy-at-Samudra-Naturopathy.png",
-    link: "#nutrition-therapy"
-  },
-  {
-    title: "Sciatica Care",
-    description: "Relief from sciatic nerve pain using non-invasive, natural methods.",
-    fullDetails: "Our Sciatica Care program combines physiotherapy, targeted exercises, and posture correction techniques to reduce nerve compression and pain, improving mobility and quality of life.",
-    icon: "fas fa-walking",
-    image: "https://hssh.health/wp-content/uploads/2023/11/Sciatica-Pain.jpg",
-    link: "#sciatica-care"
-  },
-  {
-    title: "Edema & Swelling Treatment",
-    description: "Effective natural solutions for fluid retention and swelling in the body.",
-    fullDetails: "Our Edema & Swelling Treatment uses lymphatic drainage techniques, herbal remedies, and dietary adjustments to reduce fluid buildup, improve circulation, and restore comfort.",
-    icon: "fas fa-water",
-    image: "https://www.beebehealthcare.org/sites/default/files/styles/690x350/public/2018-05/1502977424788.jpg.webp?itok=cIcn4Oo5",
-    link: "#edema-treatment"
-  },
-  {
-    title: "Pelvic Floor Rehabilitation",
-    description: "Specialized therapy for strengthening pelvic muscles and improving function.",
-    fullDetails: "Our Pelvic Floor Rehabilitation program is designed for women experiencing urinary incontinence, postnatal weakness, or pelvic pain. We use targeted exercises and lifestyle changes to restore pelvic health.",
-    icon: "fas fa-female",
-    image: "https://www.fyzical.com/upper-arlington-oh/client/1839/newsmedia/img/16926/pelvic_floor.jpeg",
-    link: "#pelvic-rehabilitation"
-  },
-  {
-    title: "Pregnancy Fitness Care",
-    description: "Safe and effective prenatal fitness programs for expecting mothers.",
-    fullDetails: "We offer prenatal exercises, breathing techniques, and nutritional guidance to support healthy pregnancy, reduce delivery complications, and promote baby’s well-being.",
-    icon: "fas fa-baby",
-    image: "https://www.prohance.in/wp-content/uploads/2021/08/exercise-in-pregnancy-banner-updated-768x452.jpg",
-    link: "#pregnancy-fitness"
-  },
-  {
-    title: "Postnatal Recovery Programs",
-    description: "Holistic recovery plans for new mothers to regain strength and vitality.",
-    fullDetails: "Our postnatal recovery program includes gentle exercises, core strengthening, emotional support, and nutrition plans to help new mothers restore their health and energy.",
-    icon: "fas fa-praying-hands",
-    image: "https://media.istockphoto.com/id/1361756860/photo/unrecognizable-female-doctor-gestures-while-advising-new-mom.jpg?s=612x612&w=0&k=20&c=AF8HOtqSN-N8qMojJZ7F6MkJxAQvncTxImUawkbpPrY=",
-    link: "#postnatal-recovery"
-  },
-  {
-    title: "Tummy Fat Reduction",
-    description: "Targeted therapies to reduce abdominal fat and improve body tone.",
-    fullDetails: "We use a combination of natural treatments, dietary guidance, and exercises to specifically target and reduce stubborn tummy fat while improving overall core strength.",
-    icon: "fas fa-heartbeat",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5g67OGGS4kvlmUIVUEwFelSK28twgW3IuwA&s",
-    link: "#tummy-fat-reduction"
-  },
-  {
-    title: "Toning & Tightening Therapies",
-    description: "Natural therapies to improve skin elasticity and muscle tone.",
-    fullDetails: "Our toning and tightening programs include herbal treatments, massages, and exercises to enhance muscle definition, skin firmness, and overall body shape.",
-    icon: "fas fa-spa",
-    image: "https://clinic33.co.uk/wp-content/uploads/2021/08/skin-tightening-treatment-clinic33-005.jpg",
-    link: "#toning-therapies"
-  },
-  {
-    title: "Diabetes Care",
-    description: "Natural, non-invasive approach to manage and reverse diabetes symptoms.",
-    fullDetails: "Our diabetes care program uses diet modifications, herbal support, and lifestyle changes to control blood sugar levels naturally, reducing dependency on medication.",
-    icon: "fas fa-syringe",
-    image: "https://www.portea.com/static/b8cc42703c6b6613246dc6e0c4e8929b/b728a/Diabetes-Care-Plan.jpg",
-    link: "#diabetes-care"
-  },
-  {
-    title: "Thyroid Disorders",
-    description: "Holistic methods to balance thyroid function and restore energy levels.",
-    fullDetails: "We use dietary corrections, herbal remedies, and stress management to naturally regulate thyroid hormones and improve overall health.",
-    icon: "fas fa-balance-scale",
-    image: "https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/thyroid-cancer/thyroid-conditions-teaser-image.jpg",
-    link: "#thyroid-disorders"
-  },
-  {
-    title: "High Blood Pressure",
-    description: "Natural care programs to control and manage hypertension.",
-    fullDetails: "Our hypertension management uses lifestyle adjustments, yoga, breathing exercises, and nutrition plans to reduce blood pressure and support heart health.",
-    icon: "fas fa-heart",
-    image: "https://onlinefirstaid.com/wp-content/uploads/2019/02/blood-pressure-scaled.jpeg",
-    link: "#high-blood-pressure"
-  },
-  {
-    title: "Migraine Relief",
-    description: "Drug-free migraine management for lasting relief.",
-    fullDetails: "We focus on identifying migraine triggers and using natural remedies like acupressure, diet changes, and relaxation techniques to reduce frequency and severity.",
-    icon: "fas fa-brain",
-    image: "https://drkunalbahrani.com/wp-content/uploads/2024/07/Tips-on-Living-with-Migraine-Headache-Dr-Kunal-Bahrani.jpg",
-    link: "#migraine-relief"
-  },
-  {
-    title: "PCOD / PCOS Care",
-    description: "Comprehensive natural therapy for hormonal balance and fertility.",
-    fullDetails: "We offer lifestyle changes, herbal remedies, and specialized exercises to manage PCOD/PCOS symptoms and improve reproductive health.",
-    icon: "fas fa-venus",
-    image: "https://www.altiushospital.com/wp-content/uploads/2024/04/PCOD-scaled-e1714104188893-1024x425.webp",
-    link: "#pcod-pcos"
-  },
-  {
-    title: "Urinary Incontinence",
-    description: "Strengthening pelvic health to control bladder function naturally.",
-    fullDetails: "Our urinary incontinence program combines pelvic floor exercises, nutrition, and non-invasive therapies to restore control and comfort.",
-    icon: "fas fa-restroom",
-    image: "https://www.healthcommunitiesproviderservices.com/wp-content/uploads/2022/09/urinary-incontince-3-GettyImages-1333948548.jpg",
-    link: "#urinary-incontinence"
-  },
-  {
-    title: "Infertility Support",
-    description: "Natural methods to improve fertility and reproductive health.",
-    fullDetails: "We address infertility issues through hormone balancing, nutrition therapy, stress reduction, and natural treatments to improve conception chances.",
-    icon: "fas fa-baby-carriage",
-    image: "https://jsshospital.in/wp-content/uploads/2025/07/Comprehensive-Infertility-Care-at-JSS-Hospital.png",
-    link: "#infertility-support"
-  },
-  {
-    title: "Constipation & High Cholesterol",
-    description: "Root-cause solutions for digestive and heart health.",
-    fullDetails: "We use diet changes, herbal remedies, and lifestyle adjustments to treat constipation, lower cholesterol, and improve overall well-being.",
-    icon: "fas fa-leaf",
-    image: "https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/constipation/woman-stomache-diagram-teaser.jpg",
-    link: "#constipation-cholesterol"
-  }
-];
-
+const servicesData = {
+  therapies: [
+    {
+      title: "Weight Management",
+      description: "Personalized natural weight management program for balance, energy, and long-term health.",
+      fullDetail: "At Kapsveda Wellness Clinic, our Weight Management Program is not just about losing weight – it’s about achieving a healthy body balance and preventing lifestyle disorders. We design personalized plans combining natural therapies, nutrition, and physical activity to help you reduce excess fat, boost energy, and improve overall well-being.",
+      icon: "⚖️",
+      image: "weight-management.jpg",
+      healingApproach: [
+        "Natural Detox Therapies – To cleanse toxins & improve metabolism",
+        "Diet & Nutrition Plans – Balanced, sustainable meal planning",
+        "Customized Exercise Programs – Fat burning, strength & flexibility training",
+        "Posture & Lifestyle Correction – To prevent recurrence of weight gain",
+        "Panchkarma & Ayurvedic Support – For hormonal balance & digestion",
+        "Naturopathy & Yoga – To harmonize body & mind",
+        "Behavior & Stress Management – To control emotional eating",
+        "Kids & Post-pregnancy Programs – Safe, guided weight control"
+      ],
+      benefits: [
+        "Manages PCOD / PCOS & Hormonal Imbalance",
+        "Controls Thyroid-related Weight Gain",
+        "Supports Fatty Liver & Metabolic Syndrome",
+        "Improves Diabetes & Cholesterol Management",
+        "Addresses Post-pregnancy & Menopausal Weight Issues",
+        "Helps with Childhood / Teen Obesity"
+      ]
+    },
+    {
+      title: "Diet & Nutrition Therapy",
+      description: "Food as medicine – creating a healthy relationship with food that heals & prevents disease.",
+      fullDetail: "At Kapsveda Wellness Clinic, we believe ‘Food is Medicine.’ Our Diet & Nutrition Therapy is not about strict dieting – it’s about creating a healthy relationship with food that heals the body, balances the mind, and prevents disease.",
+      icon: "🥗",
+      image: "diet-nutrition.jpg",
+      healingApproach: [
+        "Personalized Diet Plans – Based on body type (Prakriti), health goals & medical history",
+        "Therapeutic Nutrition – For thyroid, diabetes, fatty liver, PCOD & lifestyle disorders",
+        "Pregnancy & Postnatal Diet – Supporting mother’s health & baby’s growth",
+        "Kids’ Nutrition Plans – For growth, immunity & childhood obesity management",
+        "Detox & Healing Diets – To cleanse toxins & boost metabolism",
+        "Weight & Energy Balance – Naturally reduce fat, improve strength & stamina",
+        "Holistic Guidance – Nutrition with yoga, lifestyle changes & stress control",
+        "Diet as per Prakriti (Vata, Pitta & Kapha) – Balancing the body through Ayurvedic principles"
+      ],
+      benefits: [
+        "Improves digestion & gut health",
+        "Balances hormones naturally",
+        "Boosts immunity & energy",
+        "Controls blood sugar, cholesterol & weight",
+        "Prevents chronic lifestyle diseases",
+        "Promotes long-term wellness – without side effects"
+      ]
+    },
+    {
+      title: "Edema & Swelling Treatment",
+      description: "Natural therapies to reduce swelling, improve circulation & restore mobility.",
+      fullDetail: "At Kapsveda Wellness Clinic, we focus on reducing swelling by addressing the root causes such as poor circulation, fluid retention, or lifestyle imbalance. Our treatment combines lymphatic drainage techniques, herbal remedies, dietary adjustments, physiotherapy, and naturopathy for long-term relief.",
+      icon: "💧",
+      image: "edema-treatment.jpg",
+      healingApproach: [
+        "Lymphatic Drainage Techniques – To reduce fluid buildup",
+        "Herbal Remedies – Natural support for kidney & circulation health",
+        "Dietary Adjustments – To prevent water retention",
+        "Physiotherapy & Gentle Exercises – To improve blood & lymph flow",
+        "Naturopathy & Ayurvedic Therapies – For long-term relief"
+      ],
+      benefits: [
+        "Reduces swelling & heaviness",
+        "Improves circulation & mobility",
+        "Relieves discomfort & stiffness",
+        "Prevents recurrence with lifestyle care"
+      ]
+    },
+    {
+      title: "Pelvic Floor Rehabilitation",
+      description: "Rebuilding strength, control & comfort in men and women with pelvic floor issues.",
+      fullDetail: "At Kapsveda Wellness Clinic, our Pelvic Floor Rehabilitation program helps restore strength, control, and comfort in both men and women. Safe, non-invasive, and doctor-supervised care designed for both men & women.",
+      icon: "🧘",
+      image: "pelvic-floor.jpg",
+      healingApproach: [
+        "Targeted exercises & posture correction",
+        "Pelvic floor physiotherapy",
+        "Lifestyle modifications",
+        "Natural therapies to restore pelvic health"
+      ],
+      benefits: [
+        "For Women: Relief from urinary incontinence, postnatal weakness, pelvic organ prolapse (early stage), chronic pelvic pain",
+        "For Men: Support for urinary leakage/frequency, erectile dysfunction, prostatitis-related pelvic pain, post-surgical weakness, pelvic floor tension",
+        "Rebuilds core stability",
+        "Improves confidence & quality of life"
+      ]
+    },
+    {
+      title: "Pregnancy Fitness & Garbhsanskar Care",
+      description: "Holistic pregnancy care program nurturing mothers, babies & planning couples.",
+      fullDetail: "At Kapsveda Wellness Clinic, we go beyond fitness – offering a comprehensive pregnancy & fertility wellness program that nurtures mothers, babies, and planning couples. Our aim is to ensure a safe pregnancy, smooth delivery, and a healthier next generation.",
+      icon: "🤰",
+      image: "pregnancy-fitness.jpg",
+      healingApproach: [
+        "Prenatal Yoga & Stretching – Trimester-wise safe exercises",
+        "Breathing & Relaxation Techniques – To reduce stress & support labor",
+        "Nutritional Guidance – Healthy weight gain & baby’s growth",
+        "Pelvic Floor & Core Training – Prevents urinary incontinence",
+        "Postural Correction & Back Care – Relief from back pain & stiffness",
+        "Meditation, Affirmations & Music Therapy – Emotional stability & bonding",
+        "Garbhsanskar Classes – Mantra, meditation & spiritual practices",
+        "Beej Shuddhi Sanskar – Preconception care & IVF/IUI support"
+      ],
+      benefits: [
+        "Promotes healthy pregnancy & baby development",
+        "Lowers risk of gestational diabetes, hypertension & delivery complications",
+        "Makes labor smoother & enhances postnatal recovery",
+        "Boosts mental, physical & spiritual well-being",
+        "Supports fertility planning & reduces risk of abnormalities"
+      ]
+    },
+    {
+      title: "Infertility Support & Fertility Wellness",
+      description: "Holistic & natural infertility solutions for men and women.",
+      fullDetail: "At Kapsveda Wellness Clinic, we go beyond treatment – offering holistic & natural infertility solutions for both men and women. We address physical, emotional, and lifestyle factors that affect conception, aiming to enhance natural fertility, support IVF/IUI success, and prepare couples for safe & healthy parenthood.",
+      icon: "🌸",
+      image: "infertility-support.jpg",
+      healingApproach: [
+        "Hormone Balancing & Detox – For PCOD/PCOS, thyroid & male imbalance",
+        "Nutrition & Fertility Diet Plans – For egg quality & sperm health",
+        "Stress & Mind-Body Care – Yoga & relaxation therapies",
+        "Fertility Yoga & Exercises – Strengthen reproductive organs",
+        "Couple Fertility Care – Counseling, Beej Shuddhi Sanskar, IVF/IUI support",
+        "Male Fertility Support – For low sperm count, motility & ED",
+        "Natural Infertility Therapy – Integrated diet, naturopathy & physiotherapy"
+      ],
+      benefits: [
+        "Enhances natural conception chances",
+        "Improves IVF/IUI success rate",
+        "Corrects hormonal imbalance & PCOD/PCOS",
+        "Strengthens reproductive health",
+        "Reduces stress & builds emotional balance",
+        "100% natural, safe & side-effect–free"
+      ]
+    },
+    {
+      title: "Postnatal Recovery Programs",
+      description: "Holistic care for body, mind & emotions after childbirth.",
+      fullDetail: "At Kapsveda Wellness Clinic, we understand that childbirth is just the beginning of a mother’s healing journey. Recovery after delivery needs more than rest – it requires holistic care for body, mind, and emotions.",
+      icon: "👩‍🍼",
+      image: "postnatal-recovery.jpg",
+      healingApproach: [
+        "Gentle Exercises & Stretching – To rebuild stamina safely",
+        "Core & Pelvic Floor Strengthening – Prevents back pain & urinary issues",
+        "Emotional & Mental Support – Meditation & counseling",
+        "Nutrition & Healing Diets – Faster recovery & lactation support"
+      ],
+      benefits: [
+        "Faster healing & restored energy",
+        "Stronger muscles & better posture",
+        "Relief from postnatal pains & fatigue",
+        "Improved emotional balance & confidence",
+        "Healthy lactation & baby nourishment"
+      ]
+    },
+    {
+      title: "Tummy Fat / Visceral Fat Reduction",
+      description: "Safe, natural methods to reduce stubborn belly fat & strengthen the core.",
+      fullDetail: "At Kapsveda Wellness Clinic, we help reduce stubborn belly fat with safe, natural, and non-invasive methods. Our program is designed to not just burn fat but also strengthen your core and restore balance.",
+      icon: "🏋️",
+      image: "tummy-fat.jpg",
+      healingApproach: [
+        "Natural Therapies & Detox – Reduces bloating & fat storage",
+        "Dietary Guidance – Nutrition for fat metabolism",
+        "Core Strengthening Exercises – Tones abdomen & improves posture",
+        "Lifestyle Correction – Stress, sleep & routine management",
+        "Customized Diet & Exercise – As per body type (Vata, Pitta, Kapha)"
+      ],
+      benefits: [
+        "Visible inch loss & slimmer waistline",
+        "Stronger core & better posture",
+        "Relief from bloating & heaviness",
+        "Safe, natural & side-effect–free methods"
+      ]
+    },
+    {
+      title: "Toning & Tightening Therapies",
+      description: "Natural methods to enhance skin firmness, muscle tone & body shape.",
+      fullDetail: "At Kapsveda Wellness Clinic, our therapies are designed to naturally enhance skin firmness, muscle tone, and overall body shape. We combine advanced natural methods with personalized care for visible, lasting results.",
+      icon: "✨",
+      image: "toning-tightening.jpg",
+      healingApproach: [
+        "Herbal Treatments & Detox – Improves skin elasticity",
+        "Specialized Massages – Boost blood circulation & firmness",
+        "Targeted Exercises – Strengthen muscles & sculpt body",
+        "Non-invasive Methods – Safe & effective tightening"
+      ],
+      benefits: [
+        "Firmer, youthful & glowing skin",
+        "Better muscle tone & definition",
+        "Improved body contour & confidence",
+        "100% safe, natural & holistic care"
+      ]
+    },
+    {
+      title: "Women’s Wellness – Complete Care Under One Roof",
+      description: "Natural and integrative solutions for every stage of a woman’s life.",
+      fullDetail: "At Kapsveda Wellness Clinic, we provide natural and integrative solutions for every stage of a woman’s life. From puberty to motherhood and beyond, our programs are designed to heal, strengthen, and restore balance.",
+      icon: "🌸",
+      image: "womens-wellness.jpg",
+      healingApproach: [
+        "PCOD / PCOS & hormonal imbalance",
+        "Menstrual issues (pain, irregular cycles, heavy bleeding)",
+        "Fertility & Pre/Postnatal care (Garbhsanskar, pregnancy support, postnatal recovery)",
+        "Pelvic floor rehabilitation & urinary problems",
+        "Thyroid, obesity & lifestyle disorder management",
+        "Menopause care – hot flushes, mood swings, bone & joint health"
+      ],
+      benefits: [
+        "Natural, safe & non-invasive therapies",
+        "Customized diet, exercise & lifestyle guidance",
+        "Ayurvedic + modern physiotherapy blend",
+        "Doctor-supervised holistic healing"
+      ]
+    },
+    {
+      title: "Urine / Fecal Incontinence Care",
+      description: "Holistic and non-invasive therapies to restore bladder & bowel control.",
+      fullDetail: "At Kapsveda Wellness Clinic, we understand that urinary leakage in men and women can be uncomfortable and affect daily life, confidence, and overall well-being. With holistic and non-invasive methods, it can be effectively managed and even reversed.",
+      icon: "🚻",
+      image: "incontinence-care.jpg",
+      healingApproach: [
+        "Pelvic Floor Rehabilitation – Kegel & strengthening exercises",
+        "Customized Nutrition – diet plans to improve muscle strength",
+        "Non-invasive Therapies – safe methods for retraining muscles",
+        "Lifestyle Guidance – stress, weight & routine management"
+      ],
+      benefits: [
+        "Better bladder control & fewer leakage episodes",
+        "Stronger pelvic floor & core stability",
+        "Restored comfort, confidence & active lifestyle",
+        "100% natural, safe & doctor-supervised care"
+      ]
+    },
+    {
+      title: "Constipation & Gut Reset Therapy",
+      description: "Holistic gut-healing therapy for digestion, cholesterol & metabolism.",
+      fullDetail: "At Kapsveda Wellness Clinic, we don’t just treat constipation or cholesterol — we heal your gut health. A clean gut improves digestion, boosts metabolism, purifies blood, and protects your heart. Our holistic therapies target the root cause for lasting relief, naturally & safely.",
+      icon: "🌿",
+      image: "gut-reset.jpg",
+      healingApproach: [
+        "Gut Cleaning & Detox – Ayurvedic herbs & therapies",
+        "Personalized Nutrition – body-type diets & fiber-rich foods",
+        "Herbal Medicines – safe remedies for smooth bowel flow",
+        "Lifestyle Balance – stress, sleep & routine corrections",
+        "Yoga & Breathwork – gentle asanas & pranayama"
+      ],
+      benefits: [
+        "Daily smooth & light bowel movement",
+        "Deep gut cleansing → better energy & absorption",
+        "Lower cholesterol & stronger heart health",
+        "Natural weight balance & improved metabolism",
+        "100% safe, doctor-guided holistic care"
+      ]
+    },
+    {
+      title: "Migraine Relief",
+      description: "Natural & non-pharmacological approach for long-lasting migraine relief.",
+      fullDetail: "At Kapsveda Wellness Clinic, we understand that migraine is not just a headache — it impacts focus, energy, mood, and overall quality of life. Instead of temporary painkillers, our non-pharmacological, holistic approach works on the root causes to give lasting relief.",
+      icon: "💆",
+      image: "migraine-relief.jpg",
+      healingApproach: [
+        "Identifying Triggers – food, stress, sleep & lifestyle factors",
+        "Acupressure & Natural Therapies – to calm the nervous system",
+        "Diet & Nutrition – migraine-friendly plans",
+        "Stress & Sleep Balance – yoga, pranayama & relaxation techniques",
+        "Holistic Guidance – doctor-supervised, natural healing"
+      ],
+      benefits: [
+        "Reduced frequency & severity of migraine attacks",
+        "Natural pain relief without side effects",
+        "Improved focus, energy & emotional balance",
+        "Long-lasting comfort & enhanced quality of life"
+      ]
+    },
+    {
+      title: "Thyroid Disorders Care",
+      description: "Root-cause treatment to balance thyroid hormones & restore health.",
+      fullDetail: "At Kapsveda Wellness Clinic, we focus on the root cause of thyroid problems. Early-stage thyroid disorders can often be 100% naturally reversed, while chronic cases are safely managed to reduce complications and restore balance. By addressing stress, poor lifestyle, obesity & nutritional deficiencies, we naturally regulate thyroid hormones and boost overall health.",
+      icon: "🦋",
+      image: "thyroid-care.jpg",
+      healingApproach: [
+        "Root-Cause Treatment – stress, obesity & nutrition balance",
+        "Dietary Corrections – thyroid-friendly diet plans",
+        "Herbal Remedies – natural support for hormone regulation",
+        "Detox & Gut Health – improved absorption & metabolism",
+        "Lifestyle Management – yoga, pranayama & sleep regulation",
+        "Doctor-Supervised Care – continuous monitoring & guidance"
+      ],
+      benefits: [
+        "Balanced thyroid hormones & metabolism",
+        "Healthy weight & sustained energy",
+        "Reduced hair fall, fatigue & mood swings",
+        "100% natural, safe & side-effect–free management"
+      ]
+    }
+  ]
+};
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const serviceIndex = parseInt(urlParams.get('index'));
-    const serviceContentContainer = document.getElementById('service-content');
+  const urlParams = new URLSearchParams(window.location.search);
+  const serviceIndex = parseInt(urlParams.get('index'));
+  const serviceContentContainer = document.getElementById('service-content');
 
-    if (!isNaN(serviceIndex) && serviceIndex >= 0 && serviceIndex < servicesData.length) {
-        const service = servicesData[serviceIndex];
-        serviceContentContainer.innerHTML = `
-            <div class="service-card-details">
-              <div class="service-image-container">
-                <img src="${service.image}" alt="${service.title}" class="service-detail-img">
-              </div>
-              <div class="service-detail-content">
-                <h2 class="service-detail-title">${service.title}</h2>
-                <p class="service-detail-text">${service.fullDetails}</p>
-              </div>
-            </div>
-        `;
-    } else {
-        serviceContentContainer.innerHTML = '<p>Service not found. Please go back to the services page.</p>';
-    }
+  // Support both shapes: an array or an object with a "therapies" array
+  const servicesList = Array.isArray(servicesData)
+    ? servicesData
+    : (servicesData && Array.isArray(servicesData.therapies) ? servicesData.therapies : []);
+
+  if (!isNaN(serviceIndex) && serviceIndex >= 0 && serviceIndex < servicesList.length) {
+    const service = servicesList[serviceIndex];
+    serviceContentContainer.innerHTML = `
+      <div class="container service-details-container">
+        <div class="service-card-details">
+
+          <!-- Title + Short Desc -->
+          <div class="service-detail-content">
+            <h2 class="service-detail-title">
+              <span class="service-icon">${service.icon || ''}</span> ${service.title || ''}
+            </h2>
+            <p class="service-detail-text">${service.description || ''}</p>
+          </div>
+        </div>
+
+        <!-- Full Details -->
+        <div class="service-detail-section">
+          <h3>About This Therapy</h3>
+          <p>${service.fullDetails || service.fullDetail || ''}</p>
+        </div>
+
+        <!-- Healing Approach -->
+        ${service.healingApproach && service.healingApproach.length > 0 ? `
+          <div class="service-detail-section">
+            <h3>🌸 Our Healing Approach</h3>
+            <ul>
+              ${service.healingApproach.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+          </div>
+        ` : ''}
+
+        <!-- Benefits -->
+        ${service.benefits && service.benefits.length > 0 ? `
+          <div class="service-detail-section">
+            <h3>📌 Benefits You’ll Feel</h3>
+            <ul>
+              ${service.benefits.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+          </div>
+        ` : ''}
+      </div>
+    `;
+  } else {
+    serviceContentContainer.innerHTML = '<p>Service not found. Please go back to the services page.</p>';
+  }
 });
 
 
-
-
+// WhatsApp Form Integration
 const contactForm = document.querySelector('.contact-form-wrapper');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {

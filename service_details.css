@@ -1,95 +1,136 @@
-/* General body and main container styling */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f2f5;
-    color: #333;
-    line-height: 1.6;
-}
-
+/* Service Detail Section */
 .service-details-main {
-    padding: 40px 20px;
-    height: 100vh;
+    padding: 50px 20px;
     background: linear-gradient(180deg, #161716 0%, #499150 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    color: #fff;
 }
 
-/* Service details container and card */
+/* Container */
 .service-details-container {
-    max-width: 960px;
-    margin: auto;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
 }
 
+/* Breadcrumb */
+.service-breadcrumb {
+    margin-bottom: 20px;
+}
+.btn-back {
+    text-decoration: none;
+    color: #ffd27f;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.btn-back:hover {
+    color: #fff;
+}
+
+/* Card Layout */
 .service-card-details {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 30px;
     align-items: center;
 }
 
-/* Image styling */
+/* Image */
 .service-image-container {
-    width: 60%;
-    border-radius: 8px;
+    width: 80%;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
-
 .service-detail-img {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
-
 .service-detail-img:hover {
     transform: scale(1.05);
 }
 
-/* Content styling */
+/* Title + Desc */
 .service-detail-content {
     text-align: center;
 }
-
 .service-detail-title {
-    font-size: 2.5em;
+    font-size: 2rem;
     font-weight: 700;
-    color: rgb(239, 241, 239);
-    margin-top: 0;
+    color: #fff;
     margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #161716;
-    display: inline-block;
+    position: relative;
 }
-
+.service-detail-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #c59d5f;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
 .service-detail-text {
-    font-size: 1.1em;
-    color: rgb(239, 241, 239);
+    font-size: 1rem;
+    color: #fff;
     text-align: justify;
 }
 
-/* Responsive design for larger screens */
+/* Sections (Healing Approach / Benefits) */
+.service-detail-section {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 25px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease;
+}
+.service-detail-section:hover {
+    transform: translateY(-3px);
+}
+.service-detail-section h3 {
+    font-size: 1.4rem;
+    color: #ffd700;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
+}
+.service-detail-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.service-detail-section li {
+    margin: 10px 0;
+    padding-left: 28px;
+    position: relative;
+    color: #fff;
+}
+.service-detail-section li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #c59d5f;
+    font-weight: bold;
+}
+
+/* Responsive */
 @media (min-width: 768px) {
     .service-card-details {
         flex-direction: row;
+        align-items: flex-start;
         text-align: left;
     }
-
     .service-image-container {
         width: 45%;
     }
-
     .service-detail-content {
         flex: 1;
-        text-align: left;
-    }
-
-    .service-detail-title {
-        text-align: left;
     }
 }
