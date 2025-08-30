@@ -13,26 +13,30 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <h2>Kapsveda</h2>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="#about">Home</a></li>
-                        <li class="dropdown"><a href="#hii">About Us</a></li>
-                        <li class="dropdown"><a href="#services">Services</a></li>
-                        <li class="dropdown"><a href="gallery.html">Gallery</a></li>
-                        <li class="dropdown"><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <button class="contact-btn">Call:+91-7355227127</button>
-                <div class="mobile-menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            <!-- <div class="nav-wrapper">
+                <div class="logo flex items-center">
+                    <img src="./public/logo.png" alt="Logo" class="h-12 w-auto md:h-16 object-contain cursor-pointer 
+           transition-transform duration-300 ease-in-out 
+           hover:scale-110 hover:drop-shadow-lg">
+                </div> -->
+
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">Home</a></li>
+                    <li class="dropdown"><a href="#hii">About Us</a></li>
+                    <li class="dropdown"><a href="#services">Services</a></li>
+                    <li class="dropdown"><a href="gallery.html">Gallery</a></li>
+                    <li class="dropdown"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="contact-btn">Call:+91-7355227127</button>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+        </div>
         </div>
     </header>
 
@@ -48,7 +52,8 @@
                     <p class="animate-fade-in" style="animation-delay: 0.4s">
                         Welcome to <span style="font-weight: bold;">Kapsveda Wellness Clinic</span>, your trusted
                         partner in holistic health, healing, and lifestyle transformation.
-                        We proudly serve you from our two branches – <span style="font-weight: bold;">Saket Nagar</span>
+                        We proudly serve you from our two branches – <span style="font-weight: bold;">Saket Nagar and
+                            Kalyanpur kanpur</span>
                         <br><br>
                         At <span style="font-weight: bold;">Kapsveda</span>, we combine the precision of modern medical
                         science with the wisdom of traditional healing to offer safe, effective, and long-lasting
@@ -160,7 +165,7 @@
                 <h2 class="animate-slide-up" style="animation-delay: 0.2s">Meet Dr. Puja Shukla</h2>
                 <p class="qualifications animate-fade-in" style="animation-delay: 0.4s">
                     (MPT, MD (A.M.), DNHE, MCHN, DNYS, DAP, Garbhsanskar) – Expert in Pain, Weight & Women’s Wellness
-                    Like _ PCOD, PCOS infertility & period pain Specialist in Kanpur
+                    Like PCOD, infertility & period pain natural treatment in Kanpur
                 </p>
             </div>
             <div class="founder-content">
@@ -279,87 +284,151 @@
         </div>
         </div>
     </section>
+    <section id="founder" class="founder py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="section-header text-center mb-10">
+                <span class="section-badge px-4 py-1 rounded-full text-white text-sm font-semibold bg-green-700">
+                    Our Consultant
+                </span>
+                <h2 class="text-3xl font-bold text-gray-800 mt-3">Meet 🌿 Dr. Vivek Mishra</h2>
+                <p class="qualifications text-lg text-gray-600 mt-2">
+                    MBBS, MD (IMS BHU) | Consultant Physician
+                </p>
+            </div>
+
+            <!-- Content -->
+            <div class="founder-content flex flex-col lg:flex-row items-center gap-10">
+
+                <!-- Image -->
+                <div class="founder-image flex-shrink-0">
+                    <img src="./public/b.jpg" alt="Dr. Vivek Mishra"
+                        class="rounded-2xl shadow-lg w-72 h-80 object-cover">
+                </div>
+
+                <!-- Details -->
+                <div class="founder-details max-w-2xl">
+                    <div class="founder-description space-y-4 text-gray-700 leading-relaxed">
+                        <p><strong>🌿 Dr. Vivek Mishra</strong> <br> <em>MBBS, MD</em> — <strong>Consultant
+                                Physician</strong></p>
+
+                        <p>
+                            <strong>Expert in:</strong> Lifestyle Disease Management,
+                            Holistic & Evidence-based Treatment
+                        </p>
+
+                        <p><strong>Education:</strong> MBBS, MD (IMS BHU)</p>
+
+                        <p>
+                            <strong>Experience:</strong> Ex-Junior Resident at UPUMS Saifai in Emergency
+                        </p>
+
+                        <p>
+                            <strong>Approach:</strong> Patient-focused care, accurate diagnosis & updated medical
+                            practices
+                        </p>
+
+                        <p>
+                            <strong>Goal:</strong> To provide lasting health & wellness through holistic, scientific,
+                            and compassionate treatment
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggleVivekSpecialization() {
+                const specList = document.getElementById("vivekSpecializationList");
+                specList.classList.toggle("hidden");
+            }
+        </script>
+    </section>
+
     <section id="founder" class="founder">
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <span class="section-badge animate-slide-up"
                     style="color: rgb(243, 235, 235); background-color: #2E7032;">Our Consultant</span>
-                <h2 class="animate-slide-up" style="animation-delay: 0.2s">Meet Dr. Vivek Mishra</h2>
+                <h2 class="animate-slide-up" style="animation-delay: 0.2s">Meet Dr. Yashi Jaiswal</h2>
                 <p class="qualifications animate-fade-in" style="animation-delay: 0.4s">
-                    MBBS, MD (Medicine) – IMS, BHU | Consultant Physician
+                    MBBS (Govt.) | MS OBGY (Govt.) | FMAS | DMAS | Gold Medalist
                 </p>
             </div>
 
             <div class="founder-content">
                 <div class="founder-info animate-on-scroll">
                     <div class="founder-image animate-float">
-                        <img src="./public/b.jpg" alt="Dr. Vivek Mishra">
+                        <img src="./public/2.jpg" alt="Dr. Yashi Jaiswal">
                     </div>
                     <div class="founder-details animate-fade-in" style="animation-delay: 0.3s">
                         <div class="founder-description">
                             <p class="animate-slide-up" style="animation-delay: 0.5s">
-                                <strong>Dr. Vivek Mishra</strong> is an experienced and compassionate <strong>Consultant
-                                    Physician</strong>
-                                with expertise in managing a wide range of health conditions. He specializes in
-                                <strong>lifestyle disease management</strong>,
-                                offering holistic and evidence-based treatments tailored to each patient’s needs.
+                                <strong>Dr. Yashi Jaiswal</strong> is an accomplished <strong>Obstetrician &
+                                    Gynecologist</strong>
+                                with outstanding academic achievements and extensive clinical expertise. As a
+                                <strong>Gold Medalist</strong>,
+                                she is known for her precision, compassionate care, and dedication to women’s health.
                             </p>
                             <p class="animate-slide-up" style="animation-delay: 0.7s">
-                                With a strong academic background from <strong>IMS–BHU</strong> and clinical experience
-                                as <strong>Ex-Junior at UPUMS Saifai</strong>
-                                and <strong>Ex-RMO at Madhuraj Hospital, Kanpur</strong>, Dr. Mishra is recognized for
-                                his <strong>patient-focused approach</strong>
-                                and <strong>accurate diagnosis</strong>.
+                                With qualifications including <strong>MBBS (Govt.)</strong>, <strong>MS OBGY
+                                    (Govt.)</strong>,
+                                and advanced surgical training in <strong>FMAS & DMAS</strong>, Dr. Jaiswal combines
+                                modern medical
+                                knowledge with evidence-based practices for optimal patient outcomes.
                             </p>
                             <p class="animate-slide-up" style="animation-delay: 0.9s">
-                                He is also associated with <strong>CCIC</strong>, ensuring updated knowledge and best
-                                practices in patient care.
-                                His goal is to provide <strong>holistic, evidence-based treatment</strong> to help
-                                patients achieve lasting health and wellness.
+                                She specializes in comprehensive women’s healthcare, ranging from routine gynecology and
+                                obstetric care to advanced laparoscopic surgeries. Her mission is to deliver holistic,
+                                patient-centered treatment with empathy and excellence.
                             </p>
-
-                            <!-- Dropdown for Specializations -->
-                            <div style="text-align: center; margin-top: 15px; margin-bottom: 20px;">
-                                <button onclick="toggleVivekSpecialization()" style="
-                                background: linear-gradient(135deg, #25D366, #1ebc57);
-                                color: white;
-                                border: none;
-                                padding: 10px 20px;
-                                font-size: 16px;
-                                font-weight: bold;
-                                cursor: pointer;
-                                border-radius: 25px;
-                                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-                                transition: all 0.3s ease;
-                            " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.3)'"
-                                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)'">
-                                    View Specialization
-                                </button>
-                            </div>
-
-                            <div id="vivekSpecializationList"
-                                style="display: none; margin-top: 10px; margin-bottom: 20px;">
-                                <ul style="list-style: none; padding: 0;">
-                                    <li>✔ <strong>General Physician</strong> – Lifestyle Disease Management</li>
-                                    <li>✔ <strong>Diabetes & Thyroid Disorders</strong></li>
-                                    <li>✔ <strong>High Blood Pressure & Heart Diseases</strong></li>
-                                    <li>✔ <strong>Liver & Lung Conditions</strong></li>
-                                    <li>✔ <strong>Child Health & General Medicine</strong></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
-
-                    <script>
-                        function toggleVivekSpecialization() {
-                            const specList = document.getElementById("vivekSpecializationList");
-                            specList.style.display = (specList.style.display === "none" || specList.style.display === "") ? "block" : "none";
-                        }
-                    </script>
                 </div>
-            </div>
-        </div>
     </section>
+    <section id="consultant" class="consultant">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge animate-slide-up"
+                    style="color: rgb(243, 235, 235); background-color: #2E7032;">Online Consultation</span>
+                <h2 class="animate-slide-up" style="animation-delay: 0.2s">Meet Dr. Tanya Sharma</h2>
+                <p class="qualifications animate-fade-in" style="animation-delay: 0.4s">
+                    PT | Exercise Expert | Physiotherapist
+                </p>
+            </div>
+
+            <div class="founder-content">
+                <div class="founder-info animate-on-scroll">
+                    <div class="founder-image animate-float">
+                        <img src="./public/1.jpg" alt="Dr. Tanya Sharma">
+                    </div>
+                    <div class="founder-details animate-fade-in" style="animation-delay: 0.3s">
+                        <div class="founder-description">
+                            <p class="animate-slide-up" style="animation-delay: 0.5s">
+                                <strong>Dr. Tanya Sharma</strong> is a dedicated <strong>Physiotherapist & Exercise
+                                    Expert</strong>
+                                specializing in online consultation, rehabilitation, and fitness-oriented treatment
+                                plans.
+                                She empowers patients with customized exercise programs to promote healing and long-term
+                                wellness.
+                            </p>
+                            <p class="animate-slide-up" style="animation-delay: 0.7s">
+                                With expertise in <strong>postural correction, injury recovery, and preventive
+                                    physiotherapy</strong>,
+                                Dr. Sharma provides evidence-based care tailored to each individual’s needs.
+                                Her approach blends medical knowledge with personalized exercise therapy.
+                            </p>
+                            <p class="animate-slide-up" style="animation-delay: 0.9s">
+                                Passionate about holistic health, she offers <strong>online physiotherapy
+                                    consultations</strong>
+                                ensuring patients receive professional guidance from the comfort of their homes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
 
 
     <!-- Why Choose Us Section -->
@@ -448,7 +517,8 @@
             <div class="why-choose-grid">
                 <div class="why-choose-card">
                     <div class="card-icon">
-                        <img src="Group-1070.png" alt="Personalized Treatment">
+                        <img src="https://images.squarespace-cdn.com/content/v1/62fbe833a48ae5660accb5a8/1682678058183-OVEG7UOK72SXTII6HIVG/health.jpeg"
+                            alt="Personalized Treatment">
                     </div>
                     <h3>Personalized Treatment Plans</h3>
                     <p>Tailored to each patient's unique needs.</p>
@@ -456,7 +526,8 @@
 
                 <div class="why-choose-card">
                     <div class="card-icon">
-                        <img src="Group-1070.png" alt="Expertise in Therapies">
+                        <img src="https://i3l.ac.id/wp-content/uploads/2021/06/Website-News-and-Event-Thumbnail.png"
+                            alt="Expertise in Therapies">
                     </div>
                     <h3>Modern & Traditional Therapies</h3>
                     <p>Expertise in both for holistic healing.</p>
@@ -464,7 +535,8 @@
 
                 <div class="why-choose-card">
                     <div class="card-icon">
-                        <img src="Group-1070.png" alt="Facilities">
+                        <img src="https://www.aakashhospital.in/_next/image?url=%2Fassets%2Fimages%2Finfrastructure_service%2Fadvanced_ot_2.png&w=1080&q=75"
+                            alt="Facilities">
                     </div>
                     <h3>State-of-the-Art Facilities</h3>
                     <p>Ensuring high-quality care at every step.</p>
@@ -472,7 +544,8 @@
 
                 <div class="why-choose-card">
                     <div class="card-icon">
-                        <img src="Group-1070.png" alt="Compassionate Approach">
+                        <img src="https://www.phoenix.edu/content/dam/edu/blog/2023/02/doctor-compassionately-holding-patient-hand-704x421.jpg"
+                            alt="Compassionate Approach">
                     </div>
                     <h3>Compassionate & Professional</h3>
                     <p>Approach for long-term wellness and trust.</p>

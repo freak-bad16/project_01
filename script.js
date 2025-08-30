@@ -706,85 +706,85 @@ const servicesData = {
             title: "Weight Management",
             description: "More than weight loss/gain – it’s about balance, energy & long-term health. Personalized plans with diet, exercise, detox & natural therapies to burn fat, boost energy, and prevent lifestyle diseases.",
             icon: "⚖️",
-            image: "weight-management.jpg"
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFm9PzHj3d0qbkPi_uyerodjcVRbJphgeJoQ&s"
         },
         {
             title: "Diet & Nutrition Therapy",
             description: "At Kapsveda, we use food as medicine – not strict dieting. Our plans heal the body, balance hormones, boost energy, and prevent lifestyle diseases.",
             icon: "🥗",
-            image: "diet-nutrition.jpg"
+            image: "https://www.news-medical.net/images/news/ImageForNews_746923_16830301277682285.jpg"
         },
         {
             title: "Edema & Swelling Treatment",
             description: "Natural care for swelling by targeting fluid retention & poor circulation. With lymphatic drainage, herbs & diet support, we reduce heaviness and restore comfort. Safe, simple & doctor-supervised relief.",
             icon: "💧",
-            image: "edema-treatment.jpg"
+            image: "https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2013/11/15/17/37/ds01005_-ds00223_-ds00256_-ds00590_-ds00429_-ds00997_-ds01035_im01073_mcdc7_compressionstockingsthu_jpg.jpg"
         },
         {
             title: "Pelvic Floor Rehabilitation",
             description: "Specialized therapy to strengthen pelvic muscles, improve bladder control, relieve pain, and restore confidence in both men & women. Safe, natural & doctor-guided care.",
             icon: "🧘",
-            image: "pelvic-floor.jpg"
+            image: "https://sportsrehab.ch/assets/images/services/riabilitazione-pavimento-pelvico.jpg?v=20250531"
         },
         {
             title: "Pregnancy Fitness & Garbhsanskar Care",
             description: "More than fitness – a complete wellness journey for mother & baby. Safe yoga, diet, meditation & Garbhsanskar classes for healthy pregnancy. From preconception (Beej Shuddhi) to post-delivery care – holistic & doctor-supervised.",
             icon: "🤰",
-            image: "pregnancy-fitness.jpg"
+            image: "https://www.mumzcareworld.com/wp-content/uploads/2024/09/side-view-pregnant-woman-meditating-with-copy-space-min-scaled-e1726384675925.jpg"
         },
         {
             title: "Infertility Support & Fertility Wellness",
             description: "Holistic & natural solutions to improve fertility in both men & women. ✔ Hormone balance | ✔ Nutrition & Yoga | ✔ Stress-free parenthood. Boost natural conception & IVF/IUI success – 100% safe & doctor-supervised.",
             icon: "🌸",
-            image: "infertility-support.jpg"
+            image: "https://nyulangone.org/files/wellness-inline.jpg"
         },
         {
             title: "Postnatal Recovery Programs",
             description: "Holistic healing for new mothers – gentle exercises, pelvic floor care, stress relief & nutrition. Restores energy, reduces pain & boosts milk supply naturally. Safe • Doctor-supervised • Mother-focused 💚",
             icon: "👩‍🍼",
-            image: "postnatal-recovery.jpg"
+            image: "https://media.post.rvohealth.io/wp-content/uploads/2024/01/8144-Postpartum_Recovery_Time-1296x728-Header-1296x728-copy.png"
         },
         {
             title: "Tummy Fat / Visceral Fat Reduction",
             description: "Safe & natural program to burn stubborn belly fat, tone your core, and restore balance. ✅ Detox & diet guidance ✅ Core strengthening & lifestyle correction 👉 100% natural therapy doctor-supervised for a slim, healthy tummy.",
             icon: "🏋️",
-            image: "tummy-fat.jpg"
+            image: "https://www.vucare.com/wp-content/uploads/2023/01/Non-surgical-fat-removal-from-stomach-Blog-600x350-1.png"
         },
         {
             title: "Toning & Tightening Therapies",
             description: "Safe herbal treatments, massages & exercises to firm skin, tone muscles, and enhance body shape. 👉 Natural, effective & doctor-guided care for lasting confidence.",
             icon: "✨",
-            image: "toning-tightening.jpg"
+            image: "https://sallyssoultherapy.com/wp-content/uploads/2024/06/Skin-Tightening-1024x678.jpg"
         },
         {
             title: "Women’s Wellness – Complete Care Under One Roof",
             description: "Natural and integrative solutions for every stage of a woman’s life.",
             icon: "🌸",
-            image: "womens-wellness.jpg",
+            image: "https://static.wixstatic.com/media/2c31ecb592694dc0bb4b720958e21234.jpg/v1/fill/w_568,h_816,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2c31ecb592694dc0bb4b720958e21234.jpg",
         },
         {
             "title": "Urinary Incontinence Care",
             "description": "Leakage problem in men & women can affect confidence & daily life – but it’s treatable! Pelvic floor rehab, nutrition & safe therapies for natural bladder control.",
             "icon": "💧",
-            "image": "/images/urinary.jpg"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW_E9p_CFKJStxZ5PgUic9R-XnAjIZvTSUrA&s"
         },
         {
             "title": "Constipation & Gut Reset",
             "description": "Kapsveda’s holistic program heals your gut, relieves constipation, lowers cholesterol & boosts metabolism. Safe, natural & doctor-guided care for long-lasting digestive wellness.",
             "icon": "🌿",
-            "image": "/images/gut.jpg"
+            "image": "https://windsordigestivehealth.com/wp-content/uploads/2024/10/Gut-Health.jpeg"
         },
         {
             "title": "Migraine Relief",
             "description": "Natural & non-invasive care to manage migraine at the root. Acupressure, diet & yoga for lasting relief. Live pain-free, focused & stress-free with Kapsveda.",
             "icon": "🌸",
-            "image": "/images/migraine.jpg"
+            "image": "https://images.theconversation.com/files/472113/original/file-20220701-26-9o11ui.jpg?ixlib=rb-4.1.0&rect=7%2C22%2C5084%2C3359&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip"
         },
         {
             "title": "Thyroid Care",
             "description": "Not just medicine — we heal the root cause of thyroid. Balanced hormones, healthy weight & renewed energy — naturally, side-effect free.",
             "icon": "🌀",
-            "image": "/images/thyroid.jpg"
+            "image": "https://www.uclahealth.org/sites/default/files/styles/portrait_3x4_012000_360x480/public/images/62/thyroid-gland-illustration.png?h=77fcbfdd&f=362fd9d1&itok=6sVAUFp8"
         }
     ]
 };
