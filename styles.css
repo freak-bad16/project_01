@@ -49,11 +49,7 @@ body {
     align-items: center;
 }
 
-.logo h2 {
-    color: #2E7D32;
-    font-size: 1.8rem;
-    font-weight: bold;
-}
+
 
 .nav-list {
     display: flex;

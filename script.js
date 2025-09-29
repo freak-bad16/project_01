@@ -754,7 +754,7 @@ const servicesData = {
             title: "Toning & Tightening Therapies",
             description: "Safe herbal treatments, massages & exercises to firm skin, tone muscles, and enhance body shape. 👉 Natural, effective & doctor-guided care for lasting confidence.",
             icon: "✨",
-            image: "https://sallyssoultherapy.com/wp-content/uploads/2024/06/Skin-Tightening-1024x678.jpg"
+            image: "https://visagemedicalregina.ca/wp-content/uploads/image-1.jpeg"
         },
         {
             title: "Women’s Wellness – Complete Care Under One Roof",
@@ -766,7 +766,7 @@ const servicesData = {
             "title": "Urinary Incontinence Care",
             "description": "Leakage problem in men & women can affect confidence & daily life – but it’s treatable! Pelvic floor rehab, nutrition & safe therapies for natural bladder control.",
             "icon": "💧",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW_E9p_CFKJStxZ5PgUic9R-XnAjIZvTSUrA&s"
+            "image": "https://www.browardurologycenter.com/wp-content/uploads/2022/09/urinary-incontince-3-GettyImages-1333948548.jpg"
         },
         {
             "title": "Constipation & Gut Reset",
